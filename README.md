@@ -19,6 +19,7 @@
 - Career Linger <b> Front-end Lead Developer </b> 
 - Career Playauto - Hirogete <b> Front-end Developer </b>
 
+<!-- 
 ## 일일 목표 [2021.10.11(월) ~ ]
 1. 1일 1커밋
 2. 알고리즘 풀이
@@ -26,7 +27,8 @@
 ## 장기 목표 [2021.09.03(금) ~ ]
 1. 블로그 개설
 2. JS -> TS
-
+ -->
+ 
 <br />
 
 <!-- 통계를 나타냄 -->
