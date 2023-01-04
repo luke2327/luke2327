@@ -16,30 +16,16 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 184kb of code in 191 edited files across 168 commits over last 13 days</small>
+                <small>estimation from 319kb of code in 335 edited files across 228 commits over last 14 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="315.54818183370423" height="8" fill="#41b883"/>
-                    <rect mask="url(#languages-bar)" x="315.54818183370423" y="0" width="144.45181816629577" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="265.373882309498" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="265.373882309498" y="0" width="194.62611769050193" height="8" fill="#41b883"/>
                 </svg>
                 <div class="row fill-width">
-                    <section>
-                        <div class="field language details">
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#41b883" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                                Vue
-                            </div>
-                            <small>
-                                <div>120 kB</div>
-                                <div>68.6%</div>
-                            </small>
-                        </div>
-                    </section>
                     <section>
                         <div class="field language details">
                             <div class="field">
@@ -49,8 +35,22 @@
                                 TypeScript
                             </div>
                             <small>
-                                <div>55.1 kB</div>
-                                <div>31.4%</div>
+                                <div>109 kB</div>
+                                <div>57.69%</div>
+                            </small>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="field language details">
+                            <div class="field">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#41b883" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                                Vue
+                            </div>
+                            <small>
+                                <div>80.2 kB</div>
+                                <div>42.31%</div>
                             </small>
                         </div>
                     </section>
