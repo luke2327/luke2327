@@ -1,10 +1,10 @@
-import "i18next";
+import 'i18next';
 
-import type { Language } from "./languages/en";
+import type { Language } from './languages/en';
 
-declare module "i18next" {
+declare module 'i18next' {
   interface CustomTypeOptions {
-    defaultNS: "translation";
+    defaultNS: 'translation';
     resources: {
       translation: Language;
     };
