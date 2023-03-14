@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="222" class="">
+    <defs>
+        <style/>
+    </defs>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.tracklist{display:flex;flex-direction:column;align-items:flex-start;margin-left:28px;margin-top:4px;width:100%}.track{display:flex;align-items:center;justify-content:center;margin-bottom:4px}.track img{margin:0 10px;border-radius:7px;flex-shrink:0}.track .artist,.track .name{width:387px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.track .name{font-size:14px;line-height:14px;height:14px;font-weight:600}.track .artist{font-size:12px;color:#666}.track .infos{flex-grow:1}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style/>
+    <foreignObject x="0" y="0" width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
+            <section>
+                <h2 class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"/>
+                    </svg>
+                    Suggested tracks
+                </h2>
+                <div class="row fill-width">
+                    <section>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M2.002 2.725a.75.75 0 01.797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 11-1.497.098 10.502 10.502 0 00-9.776-9.776.75.75 0 01-.7-.798zM2 13a1 1 0 112 0 1 1 0 01-2 0zm.84-5.95a.75.75 0 00-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 101.49-.178A7.003 7.003 0 002.838 7.05z"/>
+                            </svg>
+                            From YouTube Music
+                        </div>
+                        <div class="tracklist">
+                            <div class="track">
+                                <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA8ADwDASIAAhEBAxEB/8QAHAAAAQUAAwAAAAAAAAAAAAAABwACAwUGAQQI/8QANBAAAQMDAwIEAggHAAAAAAAAAQIDEQAEBQYSIRMxByJBUTJhCBRCYnGBkaEVIyQzUrHx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwD1TSpUqBVBc3KLcJ3z5j+g96nqF22adXucQFKiOfaglBkSK5praEtoSlAhIED5U6gVKlSoOtaXHVQN8An9+a7NVeLJLi0mAkpCgmPmRP8AqrIqAiSOf3oHUqx517ihnbzELKm723bU9tc43ITG5R/xAkcnitYw6HmW3QlSQtIUAsQRI7EehoJKq8vncbiH7VrJXbduu5WG2uoYClExE/nVpQ78Ql6T+vWtxqO4t23rF4O9HpbnHDHlmASRJntHHyNAQkqStIUkgpIkEdjTqqtOZFGVxTN3bj+lc/srPBWgcBURx2/5VrQZPB5bG5a5cax92lx1CQSkJIgTEye/Pt71c5Rp42zxZQHHUje2EjzEjsDJAPJ9e9Dfwas3F5C+vCgFlKA0FcfETJ4/CKI2dujaMSkLIWlQOwjdAHoD3PJ/OKkWh5pi0vMjYZVeUxl9b3GU6qLi+dCmyEHc2hIQqFEBJn4Y9piRv73KlNslWOctble4JV/NBAHuTNQ6Vyb1/pXHXt0FF5xsb97KmiqDElCuUExO09piq7XmjsPqlOPGWsmbjoXbTvnbCt6AqShU90n1B47VUW15qCyt7S4dTcNOFkefpqC+mfvR8PcevNeYfGnVtop+6cx6WrzIKSsB4XG8JKhBgRAhIAEEwTPck0afEp6zyuGt8Xh37c2ds4l25RbQUgBQbQ0QOAVKX2+6aDOuvCzLY3HZTIZ/KG5Npav3aOmBBShMmZHMkgenJqLHpvRrmPc0jhXMNuOLVZMqtdwglooBRI9DEV33LwNqKVCh19HzKG58FtOqdXueYactiCeQG3VoSP0Smtkoyok+tVDcDp1jTrDjOMW6pDqgpRdVuMxE+nyp2psM1qLT91jr1sEutqblSNwkiO0jj8CPkQYIvqVF0P8ATn8bwOGx+GetsULe0Qi1Y6ReBS0hAAJSqSTAP2iJjnmq/UGu16fuX2XbHIZFLLjahsShshMpJCSogLMGfQSCmZFExSErIKkgkdprh23acMrSCahxg8nlWswvHKscFcdC4uWHn7p1tCNyGnOon7QUfOJHoeSJBk5DUysrqljKodtb9ld/Yu2arH6qsgJUJSOoohvcFSZ5HBng0bENIQjYlICfamKYaHnDaAr3AocCDwm0xqvR1mrGZKws7rHhwuIXbPQYUdxKZglU7pCgAZSAeDRPRZvLTuhKZJgKVzE+vFWyQAOK5qmv/9k=" width="32" height="32" alt="" />
+                                <div class="infos">
+                                    <div class="name">Okinimesumama</div>
+                                    <div class="artist">Eve</div>
+                                </div>
+                            </div>
+                            <div class="track">
+                                <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA8ADwDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAAAgMFBgcABAgB/8QAMhAAAgEDAwIDBgYCAwAAAAAAAQIDAAQRBRIhBjEHQVETFSJhcZEUMjNCgaEkZJKxwf/EABoBAQACAwEAAAAAAAAAAAAAAAMCBAABBQb/xAAlEQACAgEDAwQDAAAAAAAAAAABAgARAwQSQRMUITFRkfAigfH/2gAMAwEAAhEDEQA/ALwoaKsqsJkAik5GVOXYKPUnFLUx9UQC7sTaozpO4Zo/ZgFwQDnAPHyOeDnB71Nm2rcljTe1GOg2tGGXBBGQQe4oGFNPRt1Pd9OW34tXW7gzbzK+AwZSQCcccrhvowp4akU2LENhRIiDikiK2GpLFIIccgazNeCor4j63f6FocdzpsX5ptk0+3cLaPDHeR27gDJ4GaBqQFjxHxqcjBB6mSpjtyzYAA5J8qZTqVnDrN+bq8toRbxRIfaSqpXO5mPPyKfaucPf+pw9VR6hqTT31vBKt00asWRl52sccD4gGwfQdqZuq9al1/XLnUJWKJNJlUIyVwAPpnFGrF6Ij9NUBDX5/U6Z0S4t4Oo9UgRogl4qXkZDD4yAI2I9eBF/VSI4PNcq6nrkOp9HaVpsSye8NPVkWTaCiqMgc9x8Jx8uakXhx1J1BpGowWtxPd3qSyD2lvPKX2pwGk5OI1UNnjGSAMZPOI+z8Wm8mHqWyHiz7fPvOhGFJ4rLWZbq1guEyEljWRQfIEA/+0Rq3KE3aCZSY88HjBB8xRCsNRqTBkaveg+lr/MjaRFBKXEzNaFoN798sEIDfQ5z50z3Pht0/wD5A23eJ/1AZ927+TzU7Mkf7e3bv3rSvmjCE7mH8moHGjeSBGGR1FAn7/T8yvb7o/p603ytY3UxWL2e15nK7QSQNoIXz9KhGs6oqvHZWkCWNuXH6aKMEnGdo7nnOTVi9WXCR2MjPvbIOcnFUVq+or7yQ8KFbfjz47f3S4cS7gFFSvqdQ4Q2SZe0vXtvHhIbY7FAUbmA47VrHxA/1l/5VSa6sW53H70p7wJ/cfvXbGjwzzZ12q+1OsAaLNJCvc1xKnpZq3kUntC6ZA+maaL1rgIT7VcDn04qQ5oZAD3AP1rVTdymutL6+uozb2UDTH8uI8uQfoBmqyXw76t1K+kl/AmGMnhp5AM/PAyRXWBRV/KoFAyj0pFO03DZQ3rKA0Xwhv8A4DqN9HGPNYlz/Zx/1UvtfC7RY4VWX8TI/mxfGfsKstlHpQYHpT9xk4Mr9rj5E//Z" width="32" height="32" alt="" />
+                                <div class="infos">
+                                    <div class="name">Marigold</div>
+                                    <div class="artist">aimyon</div>
+                                </div>
+                            </div>
+                            <div class="track">
+                                <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA8ADwDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAcIAwQFBv/EACoQAAIBAwMEAgIBBQAAAAAAAAECAwQFEQAGIQcSIjETQRRRCBVScZHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwC1OmmmgaxyyLFGzyMFRASWJwAP2da91r6e1WusuFazLS0kLzysqliERSxOByeB6HOoC67bpG9+htVuHZt4qqe0wSItZF8Rj/KR5Fj+Mn2MM2SPRHvIIyE5bWv9u3RYKO82WoFRQVad8bjgjnBBH0wIII/Y119Qb0Zu+0+mtgsOybtdoaXdNyVa2op2RvGaYDtjZwO1W7QqgE5OB+xmctA0000DTTTQa9bTpV0c9NKoaOZGjYNyCCMEHGqfbw6L7y2Ntato6HckM+0a0o1171EaQ9jKVkKEn7Ccqc+u7AGdXJ1WjqpcrD1M3VFb6ep3EtNZ7h+HcKVGYQXFkLH8eCHuBactkfIewIgZmOAuQkjpHZuntbaluezqChrGpaiWA3CZRLUvKG8pHdvLuY+Wf7SuMDAEn6rzvi99T9ibRqrxbLdtOybZo440gtnc0tRTKWChSRiNny2TgkfrPs4+h/8AIQbpu39D3otHQ3GdwtFVQKUhmY8fGwZj2uT6Pps44OO4LFaaaaBprzW96G4XK2x09tQl1lEpKztCQyglMEex3hcg8EcHjjXNtNmvc3TmK0pdDRXJ+6KSpNLgwoZD3LGvAyqkqrkEHAbyzkhAPU7cly6o9S7PZdjXCvo7lQ1NRSyClV4jBEsgDzySiQAjwBVVHojyLMFHQ3ZWRdMut21KOHa9iobC80aQ18aJ+ZOpT4neWViWXDSEk8d2OWPOpy2V012psqpSo23akpKoU7UzT97O8iMyse4knPKD/HoYGoI3FcN5Xz+QM95p9gtcY9sQ/jChmqAoaNml7J1ZsKWfLEABxhfsgEB17zuLe3UbfanYe3aaO2UE+ae9XfvelkRfTxqR2Dv8h3orSFWHkozqwlFRwRUcEclFSQOfNoolBRZCPLt4Gec84GdeZ2Z1I27uqc0NLUSUN6j4mtNehp6qI4BIMbcnAPsZGvTUFZBcXmkpJkmigkeAsjAr8inDjI+1OVP2CGB0G/prGkqOzBHVip5AOcayaDh7ypKuv2/VU9uE5rDj4filEXmDlSzkHCA4LYBOBwD6ObbFuFqs8VGsckfxFsh5TJkliSVOeF54UYCjgAADXW00DTTTQRh1r6V0PUC1flUQjot1Uag0NwGVOQciNyOSvvB9qTkfYOT+P+2b1s7YJse46WGGqpquUxyQz/Ks6Nh+/wDY8mZcHB8c/epL00GhR22Ckqp54i/fMSX7mz7Yn/v+tb+mmmYttva//9k=" width="32" height="32" alt="" />
+                                <div class="infos">
+                                    <div class="name">BETELGEUSE</div>
+                                    <div class="artist">Yuuri</div>
+                                </div>
+                            </div>
+                            <div class="track">
+                                <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA8ADwDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAAAgEDBQYABAcI/8QALhAAAQMEAQMCBAYDAAAAAAAAAQIDEQAEBSESBhMxB0EUImFxFRYjMkKRUbHR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/EACERAAICAQQCAwAAAAAAAAAAAAABAhEDEiEiMRNxQWGx/9oADAMBAAIRAxEAPwD0UKICkFGDEx9jTEhIrIpR4P1qu9SdWMYa5TZN2GRyd8Gu+q2sGQtTbZUQFqKilKQSFQJk8VQDBo6CrLBFCRTWOvmsjYW15bc+y82HEdxBQoAidpIlJ9iCAR4NP8jyn3oAbIoaM0FBg6KKhFEKDTKpfU94m3uLhd6hhsfuacDioU0AAo6AAUJOtxIPvV2E8VEefFQ13b2mUtkrurZBWkBxIcSCUnRqWWOtUi2GahLUx/ACMRba46KikiCJMwfrut41FYKWrJPOZUAtxZP8lbP+wKlTVI9Epd2CaAijNCa0UdCTShJp0JooE0DUQj+dx7eSGONwj4tYJSiRsjyAZ8jzH/DHP+ouubrprK3OOvcU6tfPuodDyRzSokpIJI0PHsZFQ/W9pmulMq7eFal2S7jnbXbakkhSlfKktzy5DxKQRAKpAkDXyjlh6pYBrv8AwyeocZ+o26HChp5KonQMhJIGpkEDZBIq0sUI827j+EI5MkuKVP4+y/8Apr1F+Ysbe3CbZ637TobIdWlckJG5STAiDHndTeG6isMxdO29qXQ82CqHERyAMEjfift5rmDWTX6demNqxaWDJyt26oqTbJ4NNc5PccgmUpSEgn7eBupf0cFm25eG7fWrLtNtoWpS0qZ7TnzJLagTyB4wSYVKToDZRePlT9DtZVp1L2dQKTQcTWxqkgUg9D5pIpTSUDEJnul8PnlMnK2YfUyeSFdxaCkkEHaSPYkf43UNZ+mnSuPuE3GLxibG4SOIdYWoHjo8dkgjQ9vYVc1VlDV9gnW6Ku70TiLtQ/FrdGSSkFKW7ltKkifOo3P9VN2GLscehSLGzYt0nZDTYTJAAB19AP6rdNImsjFR2Q0pOTtsSBSRRVlaKf/Z" width="32" height="32" alt="" />
+                                <div class="infos">
+                                    <div class="name">香水</div>
+                                    <div class="artist">瑛人</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
+    </foreignObject>
+</svg>
