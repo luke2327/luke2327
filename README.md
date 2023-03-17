@@ -36,7 +36,7 @@
 
 <!-- # 👨‍💻 Front-end Engineer 
 ## 👦 Introduce!
-👋 안녕하세요. 개발 할 때 몰입하는 즐거움에 빠져 개발을 즐기고 있는 프론트엔드 개발자 최원석 입니다. <br />
+👋 안녕하세요. 개발 할 때 몰입하는 즐거움에 빠져 개발을 즐기고 있는 프론트엔드 개발자 입니다. <br />
 
 ## 🌈 Skills
 `TypeScript` `Node.js` `React` `Notion` `Python` `Serverless`
