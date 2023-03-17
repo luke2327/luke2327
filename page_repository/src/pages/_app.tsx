@@ -1,4 +1,5 @@
 import 'src/styles/globals.css';
+import 'src/styles/variables.css';
 
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
