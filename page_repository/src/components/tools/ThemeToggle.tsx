@@ -1,12 +1,9 @@
 import { useTheme } from 'next-themes';
-import nightwind from 'nightwind/helper';
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   const toggle = () => {
-    nightwind.beforeTransition();
-
     if (theme !== 'dark') {
       setTheme('dark');
     } else {
@@ -14,5 +11,9 @@ export default function ThemeToggle() {
     }
   };
 
-  return <button onClick={toggle}>Toggle</button>;
+  return (
+    <button suppressHydrationWarning={true} onClick={toggle}>
+      {theme}
+    </button>
+  );
 }
