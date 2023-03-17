@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
+import ProfileBadge from '@/components/introduction/ProfileBadge';
+import ProfileDescription from '@/components/introduction/ProfileDescription';
+
 export default function Profile() {
   return (
     <ProfileArea className={'mx-auto grid w-full gap-1 p-0'}>
-      Luke2327
+      <ProfileBadge />
+      <ProfileDescription />
     </ProfileArea>
   );
 }
@@ -14,13 +18,8 @@ const ProfileArea = styled.div`
   grid-template-columns: repeat(4, 1fr);
   max-width: 1920px;
   width: 100%;
-  -webkit-margin-start: auto;
   margin-inline-start: auto;
-  -webkit-margin-end: auto;
   margin-inline-end: auto;
-  margin-bottom: 2.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  margin-bottom: var(--luke2327-space-10);
   align-items: center;
 `;
