@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 
+import { extLinks } from '@/constants/externalLinks';
+
 export default function LinkCard() {
   return (
-    <LinkCardWrapper>
-      <LinkTitle>
-        <LinkTitleText className={'link-title-text'}>GitHub</LinkTitleText>
-      </LinkTitle>
-      <LinkDescription>
-        <LinkAnchor
-          className={'link-anchor'}
-          href={'https://github.com/luke2327'}
-        >
-          @luke2327
-          <LinkArrowLink src={'/images/arrow-link.svg'} />
-        </LinkAnchor>
-      </LinkDescription>
-    </LinkCardWrapper>
+    <>
+      {extLinks.map(({ head, title, url }, idx) => (
+        <LinkCardWrapper>
+          <LinkTitle>
+            <LinkTitleText className={'link-title-text'}>{head}</LinkTitleText>
+          </LinkTitle>
+          <LinkDescription>
+            <LinkAnchor key={idx} className={'link-anchor'} href={url}>
+              {title}
+              <LinkArrowLink src={'/images/arrow-link.svg'} />
+            </LinkAnchor>
+          </LinkDescription>
+        </LinkCardWrapper>
+      ))}
+    </>
   );
 }
 
