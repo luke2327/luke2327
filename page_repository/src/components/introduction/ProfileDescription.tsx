@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
+import { extUrls } from '@/constants/externalLinks';
+
 export default function ProfileDescription() {
   return (
     <ProfileDescriptionWrapper>
       <div>
-        <ProfileHeading>Wonseok Choi</ProfileHeading>
+        <ProfileHeading className={'profile-heading'}>
+          Wonseok Choi
+        </ProfileHeading>
         <ProfileParagraph>Product-focused Fullstack Developer</ProfileParagraph>
-        <ProfileAnchor>luke2327.eth</ProfileAnchor>
+        <ProfileAnchor href={extUrls.etherscan}>luke2327.eth</ProfileAnchor>
       </div>
     </ProfileDescriptionWrapper>
   );
@@ -18,10 +22,9 @@ const ProfileDescriptionWrapper = styled.div`
 `;
 
 const ProfileHeading = styled.h1`
+  font-size: var(--luke2327-fontSizes-lg);
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
-  //color: var(--luke2327-colors-white-500);
-  font-size: var(--luke2327-fontSizes-lg);
   line-height: 1.33;
 
   @media screen and (min-width: 480px) {
@@ -36,6 +39,5 @@ const ProfileAnchor = styled.a`
   text-decoration: none;
   outline: 2px solid transparent;
   outline-offset: 2px;
-  //color: white;
   opacity: 0.5;
 `;
