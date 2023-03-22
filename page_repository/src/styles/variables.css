@@ -209,7 +209,6 @@
     --luke2327-fontSizes-md: clamp(14px, calc(14.00px + 0.00vw), 14px);
     --luke2327-fontSizes-lg: clamp(18px, calc(3.71px + 3.81vw), 22px);
     --luke2327-fontSizes-xl: 1.25rem;
-    --luke2327-fontSizes-xs: 0.75rem;
     -webkit---luke2327-fontSizes-2xl: 1.5rem;
     --luke2327-fontSizes-2xl: 1.5rem;
     -webkit---luke2327-fontSizes-3xl: 1.875rem;
@@ -391,5 +390,4 @@
     --luke2327-transition-duration-slow: 300ms;
     --luke2327-transition-duration-slower: 400ms;
     --luke2327-transition-duration-ultra-slow: 500ms;
-
 }
