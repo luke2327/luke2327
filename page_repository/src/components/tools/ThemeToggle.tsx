@@ -13,7 +13,7 @@ export default function ThemeToggle() {
 
   return (
     <button suppressHydrationWarning={true} onClick={toggle}>
-      {theme}
+      {theme === 'dark' ? 'Dark' : 'Light'}
     </button>
   );
 }
