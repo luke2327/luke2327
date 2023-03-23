@@ -36,6 +36,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={defaultLanguage}>
+        <title>Luke2327</title>
+        <link
+          rel="canonical"
+          href="https://luke2327.vercel.app"
+          key="canonical"
+        />
         <Head />
         <body>
           <Main />
