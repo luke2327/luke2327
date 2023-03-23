@@ -7,6 +7,9 @@ export default function ProfileBadge() {
         <Profile className={'flex items-center justify-center'}>
           <ProfileImg
             className={'rounded-xl'}
+            alt={'luke2327 profile image'}
+            width={85}
+            height={85}
             // src={'https://luke2327.lol/profile.png'}
           />
         </Profile>

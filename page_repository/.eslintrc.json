@@ -58,6 +58,7 @@
         "unused-imports/no-unused-vars": "warn",
         "@typescript-eslint/no-shadow": "off",
         "tailwindcss/migration-from-tailwind-2": "off",
+        "no-nested-ternary": "off",
         "import/no-extraneous-dependencies": [
           "off",
           {

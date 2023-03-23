@@ -5,9 +5,12 @@ import ProfileDescription from '@/components/introduction/ProfileDescription';
 
 export default function Profile() {
   return (
-    <ProfileArea className={'mx-auto grid w-full gap-1 p-0'}>
-      <ProfileBadge />
-      <ProfileDescription />
+    <ProfileArea
+      aria-label={'profile'}
+      className={'mx-auto grid w-full gap-1 p-0'}
+    >
+      <ProfileBadge aria-label={'profile badge'} />
+      <ProfileDescription aria-label={'profile description'} />
     </ProfileArea>
   );
 }

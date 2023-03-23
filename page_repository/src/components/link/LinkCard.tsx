@@ -6,14 +6,28 @@ export default function LinkCard() {
   return (
     <>
       {extLinks.map(({ head, title, url }, idx) => (
-        <LinkCardWrapper key={idx}>
+        <LinkCardWrapper role={'row'} aria-rowindex={idx} key={idx}>
           <LinkTitle>
-            <LinkTitleText className={'link-title-text'}>{head}</LinkTitleText>
+            <LinkTitleText
+              aria-label={`heading: ${head}`}
+              className={'link-title-text'}
+            >
+              {head}
+            </LinkTitleText>
           </LinkTitle>
           <LinkDescription>
-            <LinkAnchor className={'link-anchor'} href={url}>
+            <LinkAnchor
+              aria-label={`title: ${title}`}
+              className={'link-anchor'}
+              href={url}
+            >
               {title}
-              <LinkArrowLink src={'/images/arrow-link.svg'} />
+              <LinkArrowLink
+                width={14}
+                height={14}
+                src={'/images/arrow-link.svg'}
+                alt={`link: ${url}`}
+              />
             </LinkAnchor>
           </LinkDescription>
         </LinkCardWrapper>

@@ -6,11 +6,22 @@ export default function ProfileDescription() {
   return (
     <ProfileDescriptionWrapper>
       <div>
-        <ProfileHeading className={'profile-heading'}>
+        <ProfileHeading
+          role={'heading'}
+          aria-label={'name'}
+          className={'profile-heading'}
+        >
           Wonseok Choi
         </ProfileHeading>
-        <ProfileParagraph>Product-focused Fullstack Developer</ProfileParagraph>
-        <ProfileAnchor href={extUrls.etherscan}>luke2327.eth</ProfileAnchor>
+        <ProfileParagraph aria-label={'jobs'}>
+          Product-focused Fullstack Developer
+        </ProfileParagraph>
+        <ProfileAnchor
+          aria-label={`link: ${extUrls.etherscan}`}
+          href={extUrls.etherscan}
+        >
+          luke2327.eth
+        </ProfileAnchor>
       </div>
     </ProfileDescriptionWrapper>
   );

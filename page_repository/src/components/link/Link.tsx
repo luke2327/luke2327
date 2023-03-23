@@ -4,8 +4,10 @@ import LinkCard from '@/components/link/LinkCard';
 
 export default function Link() {
   return (
-    <LinkWrapper>
-      <LinkHeading className={'link-heading'}>Link</LinkHeading>
+    <LinkWrapper role={'presentation'}>
+      <LinkHeading role={'heading'} className={'link-heading'}>
+        Link
+      </LinkHeading>
       <LinkCard />
     </LinkWrapper>
   );
