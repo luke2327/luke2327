@@ -10,12 +10,17 @@ type INodeProps = {
 
 export default function Experience(props: INodeProps) {
   return (
-    <ExperienceWrapper>
-      <ExperienceHeading className={'experience-heading'}>
+    <ExperienceWrapper role={'row-group'} aria-label={'Experience'}>
+      <ExperienceHeading
+        role={'heading'}
+        aria-level={3}
+        aria-label={`heading: ${props.head}`}
+        className={'experience-heading'}
+      >
         {props.head}
       </ExperienceHeading>
       {props.history.map((history, idx) => (
-        <ExperienceHistory key={idx} {...history} />
+        <ExperienceHistory aria-rowindex={idx} key={idx} {...history} />
       ))}
     </ExperienceWrapper>
   );

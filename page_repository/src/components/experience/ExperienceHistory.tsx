@@ -4,15 +4,36 @@ import type { ExpHistory } from '@/constants/experienctHistory';
 
 export default function ExperienceHistory(props: ExpHistory) {
   return (
-    <ExpGrid>
-      <ExpPeriod className={'experience-period'}>{props.period}</ExpPeriod>
+    <ExpGrid role={'row'}>
+      <ExpPeriod
+        aria-label={`period: ${props.period}`}
+        className={'experience-period'}
+      >
+        {props.period}
+      </ExpPeriod>
       <ExpCard>
-        <ExpAnchor className={'experience-anchor'} href={props.link}>
+        <ExpAnchor
+          aria-label={`title: ${props.title.en}`}
+          className={'experience-anchor'}
+          href={props.link}
+        >
           {props.title.en}
-          {props.link && <ExpArrowLink src={'/images/arrow-link.svg'} />}
+          {props.link && (
+            <ExpArrowLink
+              alt={`link: ${props.title.en}`}
+              width={14}
+              height={14}
+              src={'/images/arrow-link.svg'}
+            />
+          )}
         </ExpAnchor>
-        <ExpDescription>{props.description.en}</ExpDescription>
-        <ExpSkillStack className={'experience-skill-stack'}>
+        <ExpDescription aria-label={`description: ${props.description.en}`}>
+          {props.description.en}
+        </ExpDescription>
+        <ExpSkillStack
+          aria-label={`skill-stack: ${props.skill.join()}`}
+          className={'experience-skill-stack'}
+        >
           {props.skill.join(' • ')}
         </ExpSkillStack>
       </ExpCard>

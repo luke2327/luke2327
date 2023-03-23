@@ -36,13 +36,33 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={defaultLanguage}>
-        <title>Luke2327</title>
-        <link
-          rel="canonical"
-          href="https://luke2327.vercel.app"
-          key="canonical"
-        />
-        <Head />
+        <Head>
+          <title>Luke2327</title>
+          <link
+            rel="canonical"
+            href="https://luke2327.vercel.app"
+            key="canonical"
+          />
+          <meta
+            name={'description'}
+            content={`en: GM, Im Luke2327. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.`}
+          />
+          <script
+            type={'application/ld+json'}
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://luke2327.vercel.app',
+                '@type': 'WebSite',
+                name: 'Luke2327 introduction page',
+                alternateName: 'Luke2327',
+                url: 'https://luke2327.vercel.app',
+                headline: 'Analyzing Google Search traffic drops',
+                datePublished: '2023-03-20T08:00:00+08:00',
+                dateModified: '2023-03-20T09:20:00+08:00',
+              }),
+            }}
+          ></script>
+        </Head>
         <body>
           <Main />
           <NextScript />

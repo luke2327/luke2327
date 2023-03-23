@@ -3,10 +3,14 @@ import styled from 'styled-components';
 export default function Description() {
   return (
     <DescriptionWrapper>
-      <DescriptionHeading className={'description-heading'}>
+      <DescriptionHeading
+        role={'heading'}
+        aria-label={'About'}
+        className={'description-heading'}
+      >
         About
       </DescriptionHeading>
-      <p>
+      <p aria-label={'introduction'}>
         GM, Im Luke2327. I enjoy building dynamic, creative products from start
         to finish. Focused on developing intuitive experiences that constantly
         grow and improve based on user metrics. Always shipping.

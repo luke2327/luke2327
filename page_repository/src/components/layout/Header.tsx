@@ -5,7 +5,7 @@ export default function Header() {
     <header
       className={'fixed top-0 flex w-full items-center justify-between p-4'}
     >
-      <p>Luke2327</p>
+      <p aria-label={`nickname: Luke2327`}>Luke2327</p>
       <ThemeToggle />
     </header>
   );

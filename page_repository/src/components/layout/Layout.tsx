@@ -6,8 +6,8 @@ import Main from '@/components/layout/Main';
 const Layout: React.FC = () => {
   return (
     <>
-      <Header />
-      <Main />
+      <Header aria-level={1} />
+      <Main aria-level={1} />
     </>
   );
 };
