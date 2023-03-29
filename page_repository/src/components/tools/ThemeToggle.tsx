@@ -1,15 +1,26 @@
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { setTheme: changeTheme } = useTheme();
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   const toggle = () => {
     if (theme !== 'dark') {
       setTheme('dark');
+      changeTheme('dark');
     } else {
       setTheme('light');
+      changeTheme('light');
     }
   };
+
+  useEffect(() => {
+    // @ts-ignore
+    const [tag] = document.getElementsByTagName('html');
+
+    setTheme(tag.className);
+  }, []);
 
   const moonProps: Pick<HTMLImageElement, 'width' | 'height' | 'src'> = {
     width: 28,
