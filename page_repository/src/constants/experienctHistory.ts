@@ -1,4 +1,4 @@
-export type ExpHistory = {
+export type History = {
   title: {
     en: string;
     ko: string;
@@ -18,7 +18,7 @@ export const expHistory = [
   {
     title: {
       en: 'R&D Manager – Eikoline Inc.',
-      ko: '',
+      ko: 'R&D Manager - 에이코라인 Inc.',
       ja: '',
     },
     description: {
@@ -33,7 +33,7 @@ export const expHistory = [
   {
     title: {
       en: 'R&D Manager – Linger Corp.',
-      ko: '',
+      ko: 'R&D Manager – 주식회사 링거',
       ja: '',
     },
     description: {
@@ -48,7 +48,7 @@ export const expHistory = [
   {
     title: {
       en: 'R&D Manager – Playauto Inc.',
-      ko: '',
+      ko: 'R&D Manager – 주식회사 플레이오토',
       ja: '',
     },
     description: {
@@ -63,7 +63,7 @@ export const expHistory = [
   {
     title: {
       en: 'Frifee Inc.',
-      ko: '',
+      ko: '주식회사 프라이피',
       ja: '',
     },
     description: {
@@ -74,4 +74,4 @@ export const expHistory = [
     period: '2017 - 2019',
     skill: ['TS', 'Angular', 'React', 'Gatsby', 'Express', 'MySQL'],
   },
-] as ExpHistory[];
+] as History[];
