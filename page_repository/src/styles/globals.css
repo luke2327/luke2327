@@ -4,6 +4,7 @@
 
 html {
     line-height: 1.5;
+    scroll-behavior: smooth;
     font-family: var(--luke2327-fonts-body);
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;

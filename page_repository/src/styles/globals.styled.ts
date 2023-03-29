@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :is(html.dark) :is(
     h1.profile-heading,
-    h2.experience-heading,
+    h2.history-heading,
     h2.description-heading,
     h2.link-heading,
     a.experience-anchor,
