@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     h2.history-heading,
     h2.description-heading,
     h2.link-heading,
-    a.experience-anchor,
+    a.history-anchor,
     a.link-anchor
   ) {
     color: var(--luke2327-colors-white-500);
@@ -24,26 +24,26 @@ export const GlobalStyle = createGlobalStyle`
 
   :is(html.light) :is(
     h1.profile-heading,
-    h2.experience-heading,
+    h2.history-heading,
     h2.description-heading,
     h2.link-heading,
-    a.experience-anchor,
+    a.history-anchor,
     a.link-anchor
   ) {
     color: var(--luke2327-colors-black-500);
   }
   
   :is(html.dark) :is(
-    p.experience-period,
-    p.experience-skill-stack,
+    p.history-period,
+    p.history-skill-stack,
     p.link-title-text
   ) {
     color: var(--luke2327-colors-whiteAlpha-600);
   }
 
   :is(html.light) :is(
-    p.experience-period,
-    p.experience-skill-stack,
+    p.history-period,
+    p.history-skill-stack,
     p.link-title-text
   ) {
     color: var(--luke2327-colors-blackAlpha-600);

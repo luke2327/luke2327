@@ -9,12 +9,10 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
     "i18next": "^22.4.8",
     "i18next-browser-languagedetector": "^7.0.1",
     "next": "^13.1.1",
     "next-themes": "^0.2.1",
-    "nightwind": "^1.1.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.1",
@@ -25,6 +23,7 @@
     "@types/react": "18.0.11",
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
     "autoprefixer": "10.4.4",
     "eslint": "8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
