@@ -10,7 +10,7 @@ export const spHistory = [
       ko: '',
       ja: '',
     },
-    link: 'https://chocolat-frontend.vercel.app',
+    link: 'https://chocolat.malihua.jp',
     period: '2022 - present',
     skill: ['TS', 'Next', 'Tailwind', 'Express', 'Sequelize', 'RDS', 'ECS'],
   },
@@ -49,7 +49,7 @@ export const spHistory = [
       ja: '',
     },
     period: '2020 - 2021',
-    link: 'http://ec2-3-37-36-193.ap-northeast-2.compute.amazonaws.com:3000',
+    link: 'https://lms.malihua.jp',
     skill: ['TS', 'React', 'MaterialUI', 'Express'],
   },
   {

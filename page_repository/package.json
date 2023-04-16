@@ -1,6 +1,7 @@
 {
   "author": "luke2327",
   "repository": "https://github.com/luke2327/luke2327.git",
+  "homepage": "https://resume.malihua.jp",
   "private": true,
   "scripts": {
     "dev": "next dev",
