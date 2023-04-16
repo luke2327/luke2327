@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <title>Luke2327</title>
           <link
             rel="canonical"
-            href="https://luke2327.vercel.app"
+            href="https://resume.malihua.jp"
             key="canonical"
           />
           <meta
@@ -51,11 +51,11 @@ class MyDocument extends Document {
             type={'application/ld+json'}
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
-                '@context': 'https://luke2327.vercel.app',
+                '@context': 'https://resume.malihua.jp',
                 '@type': 'WebSite',
                 name: 'Luke2327 introduction page',
                 alternateName: 'Luke2327',
-                url: 'https://luke2327.vercel.app',
+                url: 'https://resume.malihua.jp',
                 headline: 'Analyzing Google Search traffic drops',
                 datePublished: '2023-03-20T08:00:00+08:00',
                 dateModified: '2023-03-20T09:20:00+08:00',
