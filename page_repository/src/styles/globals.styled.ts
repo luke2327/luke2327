@@ -48,4 +48,16 @@ export const GlobalStyle = createGlobalStyle`
   ) {
     color: var(--luke2327-colors-blackAlpha-600);
   }
+  
+  :is(html.dark) :is(
+    img.profile-img
+  ) {
+    border: 1px solid white;
+  }
+
+  :is(html.light) :is(
+    img.profile-img
+  ) {
+    border: 1px solid black;
+  }
 `;

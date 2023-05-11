@@ -6,11 +6,11 @@ export default function ProfileBadge() {
       <ProfileWrapperButton>
         <Profile className={'flex items-center justify-center'}>
           <ProfileImg
-            className={'rounded-xl'}
+            className={'profile-img rounded-xl'}
             alt={'luke2327 profile image'}
             width={85}
             height={85}
-            // src={'https://luke2327.lol/profile.png'}
+            src={`/images/profile.svg`}
           />
         </Profile>
       </ProfileWrapperButton>
@@ -36,5 +36,5 @@ const ProfileImg = styled.img`
   width: 80%;
   height: auto;
   max-width: 100%;
-  border: 1px solid white;
+  filter: grayscale(0.5);
 `;
