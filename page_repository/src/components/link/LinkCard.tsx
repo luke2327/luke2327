@@ -25,7 +25,7 @@ export default function LinkCard() {
               <LinkArrowLink
                 width={14}
                 height={14}
-                src={'/images/arrow-link.svg'}
+                src={`/images/dark/arrow-link.svg`}
                 alt={`link: ${url}`}
               />
             </LinkAnchor>

@@ -30,7 +30,7 @@ export default function ExperienceHistory(props: History) {
               alt={`link: ${props.title.en}`}
               width={14}
               height={14}
-              src={'/images/arrow-link.svg'}
+              src={`/images/dark/arrow-link.svg`}
             />
           )}
         </HsAnchor>
@@ -39,7 +39,7 @@ export default function ExperienceHistory(props: History) {
         </HsDescription>
         <HsSkillStack
           aria-label={`skill-stack: ${props.skill.join()}`}
-          className={'history-skill-stack'}
+          className={'history-skill-stack flex'}
         >
           {props.skill.join(' • ')}
         </HsSkillStack>

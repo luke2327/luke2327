@@ -10,7 +10,7 @@ export type History = {
     ja: string;
   };
   period: string;
-  skill: string[];
+  skill: string[] | { label: string; icon: string }[];
   link?: string;
 };
 
