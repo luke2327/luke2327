@@ -6,6 +6,7 @@ import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 import { useEffect, useState } from 'react';
 
+import Header from '@/components/layout/Header';
 import { defaultThemeColor, gaTrackingId } from '@/constants/AppConfig';
 import { GlobalStyle } from '@/styles/globals.styled';
 
@@ -56,7 +57,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           </ThemeProvider>
         </>
       ) : (
-        <p>Loading</p>
+        <>
+          <Header />
+          <div
+            className={'flex h-[100vh] w-[100vw] items-center justify-center'}
+          >
+            Loading...
+          </div>
+        </>
       )}
     </>
   );

@@ -32,7 +32,8 @@ export const GlobalStyle = createGlobalStyle`
     h2.skill-heading,
     h2.associate-company-heading,
     a.history-anchor,
-    a.link-anchor
+    a.link-anchor,
+    p.associate-title-text
   ) {
     color: var(--luke2327-colors-white-500);
   }
@@ -45,7 +46,8 @@ export const GlobalStyle = createGlobalStyle`
     h2.skill-heading,
     h2.associate-company-heading,
     a.history-anchor,
-    a.link-anchor
+    a.link-anchor,
+    p.associate-title-text
   ) {
     color: var(--luke2327-colors-black-500);
   }
