@@ -1,3 +1,5 @@
+import { useTheme } from 'next-themes';
+
 import {
   HsAnchor,
   HsArrowLink,
@@ -10,6 +12,8 @@ import {
 import type { History } from '@/constants/experienctHistory';
 
 export default function ExperienceHistory(props: History) {
+  const { theme } = useTheme();
+
   return (
     <HsGrid role={'row'}>
       <HsPeriod
@@ -30,7 +34,7 @@ export default function ExperienceHistory(props: History) {
               alt={`link: ${props.title.en}`}
               width={14}
               height={14}
-              src={`/images/dark/arrow-link.svg`}
+              src={`/images/${theme}/arrow-link.svg`}
             />
           )}
         </HsAnchor>
