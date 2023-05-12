@@ -12,7 +12,7 @@ export default function LinkCard() {
         <AssociateTitle>
           <AssociateTitleText
             aria-label={`heading: Shop`}
-            className={'link-title-text'}
+            className={'associate-title-text'}
           >
             Shop
           </AssociateTitleText>
@@ -23,7 +23,7 @@ export default function LinkCard() {
         <AssociateTitle>
           <AssociateTitleText
             aria-label={`heading: Delivery`}
-            className={'link-title-text'}
+            className={'associate-title-text'}
           >
             Delivery
           </AssociateTitleText>
