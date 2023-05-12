@@ -4,17 +4,27 @@ import 'src/styles/variables.css';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { defaultThemeColor, gaTrackingId } from '@/constants/AppConfig';
 import { GlobalStyle } from '@/styles/globals.styled';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const localStorageTheme = localStorage.getItem('theme');
 
     if (!localStorageTheme) {
       localStorage.setItem('theme', defaultThemeColor);
+    }
+  });
+
+  useEffect(() => {
+    const html = document.querySelector(`html`);
+
+    if (html) {
+      setLoading(true);
     }
   });
 
@@ -38,10 +48,16 @@ function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-      <GlobalStyle />
-      <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      {loading ? (
+        <>
+          <GlobalStyle />
+          <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </>
+      ) : (
+        <p>Loading</p>
+      )}
     </>
   );
 }

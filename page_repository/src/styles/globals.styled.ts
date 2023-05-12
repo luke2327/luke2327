@@ -12,10 +12,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :is(html.dark) :is(
+    #ArrowLink
+  ) {
+    fill: var(--luke2327-colors-white-500);
+  }
+
+  :is(html.light) :is(
+    #ArrowLink
+  ) {
+    fill: var(--luke2327-colors-black-500);
+  }
+
+
+  :is(html.dark) :is(
     h1.profile-heading,
     h2.history-heading,
     h2.description-heading,
     h2.link-heading,
+    h2.skill-heading,
+    h2.associate-company-heading,
     a.history-anchor,
     a.link-anchor
   ) {
@@ -27,6 +42,8 @@ export const GlobalStyle = createGlobalStyle`
     h2.history-heading,
     h2.description-heading,
     h2.link-heading,
+    h2.skill-heading,
+    h2.associate-company-heading,
     a.history-anchor,
     a.link-anchor
   ) {

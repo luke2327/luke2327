@@ -2,16 +2,22 @@ import styled from 'styled-components';
 
 import { extUrls } from '@/constants/externalLinks';
 
-export default function ProfileDescription() {
+type IProfileDescriptionProps = {
+  className: string;
+};
+
+export default function ProfileDescription({
+  className,
+}: IProfileDescriptionProps) {
   return (
-    <ProfileDescriptionWrapper>
+    <ProfileDescriptionWrapper className={className}>
       <div>
         <ProfileHeading
           role={'heading'}
           aria-label={'name'}
           className={'profile-heading'}
         >
-          Wonseok Choi
+          Luke2327
         </ProfileHeading>
         <ProfileParagraph aria-label={'jobs'}>
           Product-focused Fullstack Developer
