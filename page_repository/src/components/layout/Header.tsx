@@ -5,13 +5,15 @@ export default function Header() {
     <header
       className={'fixed top-0 flex w-full items-center justify-between p-4'}
     >
-      <a
-        href={'#main'}
-        aria-label={`nickname: Luke2327, scroll to top`}
-        aria-live="polite"
-      >
-        Luke2327
-      </a>
+      <div className={'flex items-center'}>
+        <a
+          href={'#main'}
+          aria-label={`nickname: Luke2327, scroll to top`}
+          aria-live="polite"
+        >
+          Luke2327
+        </a>
+      </div>
       <ThemeToggle />
     </header>
   );

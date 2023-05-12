@@ -10,7 +10,10 @@ export default function Profile() {
       className={'mx-auto grid w-full gap-1 p-0'}
     >
       <ProfileBadge aria-label={'profile badge'} />
-      <ProfileDescription aria-label={'profile description'} />
+      <ProfileDescription
+        aria-label={'profile description'}
+        className={'pt-7'}
+      />
     </ProfileArea>
   );
 }
