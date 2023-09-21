@@ -1,9 +1,15 @@
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://komarev.com/ghpvc/?username=luke2327&color=blueviolet&" />
+<a href="https://resume.malihua.jp" style="text-decoration: none !important;">
+  <img align="center" src="https://img.shields.io/badge/luke2327-blueviolet?&style=flat-square&logo=vowpalwabbit&logoColor=white" />
 </a>
-<a href="https://hits.seeyoufarm.com"><img align="center" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fluke2327%2Fhit-counter&count_bg=%233184CF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-<a href="https://www.instagram.com/kirakira_rui/">
-  <img align="center" src="https://img.shields.io/badge/Instagram-E4405F?logo=Instagram&logoColor=white" />
+<!-- <a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://komarev.com/ghpvc/?username=luke2327&color=blueviolet" />
+</a> -->
+<!-- <a href="https://hits.seeyoufarm.com"><img align="center" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fluke2327%2Fhit-counter&count_bg=%233184CF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&style=flat-square"/></a> -->
+<a href="https://www.instagram.com/kirakira_mariaaaaa/" style="text-decoration: none !important;">
+  <img align="center" src="https://img.shields.io/badge/Instagram-E4405F?logo=Instagram&logoColor=white&style=flat-square" />
+</a>
+<a href="https://malihua.jp" style="text-decoration: none !important;">
+  <img align="center" src="https://img.shields.io/badge/Malihua-E98EAD?style=flat-square&logo=adafruit&logoColor=white" />
 </a>
 
 <br>

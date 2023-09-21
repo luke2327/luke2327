@@ -10,7 +10,7 @@ export default function ProfileBadge() {
             alt={'luke2327 profile image'}
             width={85}
             height={85}
-            src={`/images/profile.svg`}
+            src={`/images/4963BF28-9DA0-4DAA-9DF1-22194881E47A.jpeg`}
           />
         </Profile>
       </ProfileWrapperButton>
