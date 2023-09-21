@@ -1,14 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  html.light, html.light body {
+  html.light, html.light body, html.light body > div {
     color: var(--luke2327-colors-blackAlpha-700);
-    background: var(--luke2327-colors-white-500);
+    background-color: var(--luke2327-colors-white-500);
   }
 
-  html.dark, html.dark body {
+  html.dark, html.dark body, html.dark body > div {
     color: var(--luke2327-colors-whiteAlpha-700);
-    background: var(--luke2327-colors-black-500);
+    background-color: var(--luke2327-colors-black-500);
   }
 
   :is(html.dark) :is(
@@ -21,6 +21,24 @@ export const GlobalStyle = createGlobalStyle`
     #ArrowLink
   ) {
     fill: var(--luke2327-colors-black-500);
+  }
+  
+  :is(html.dark) :is(.lucide) {
+    stroke: #a3a3a3
+  }
+
+  :is(html.light) :is(.lucide) {
+    stroke: #717170
+  }
+  
+  header {
+    z-index: 2;
+    background: inherit;
+
+    @media screen and (min-width: 480px) {
+      background: unset;
+      z-index: unset;
+    }
   }
 
 
