@@ -3,6 +3,27 @@ import type { History } from '@/constants/experienctHistory';
 export const spHistory = [
   {
     title: {
+      en: 'Daisy',
+    },
+    description: {
+      en: `I hope people all over the world live in peace`,
+      ko: '',
+      ja: '',
+    },
+    link: 'https://daisy.fmawo.com',
+    period: '2023 - 2023',
+    skill: [
+      { label: 'TS', icon: 'typescript' },
+      { label: 'Next', icon: 'nextjs' },
+      { label: 'KakaoMap', icon: 'KakaoMap' },
+      { label: 'Tailwind', icon: 'tailwind' },
+      { label: 'Express', icon: 'expressjs' },
+      { label: 'RDS', icon: 'rds' },
+      { label: 'ECS', icon: 'ecs' },
+    ],
+  },
+  {
+    title: {
       en: 'Chocolat',
     },
     description: {

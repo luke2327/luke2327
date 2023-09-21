@@ -42,7 +42,7 @@ const detection: Readonly<object> = {
   caches: ['localStorage', 'cookie'],
   excludeCacheFor: ['cimode'],
   cookieOptions: { path: '/', sameSite: 'strict' },
-  defaultLanguage: 'ja',
+  defaultLanguage: 'en',
 };
 
 i18n

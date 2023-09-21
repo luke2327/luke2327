@@ -1,13 +1,19 @@
 import 'src/styles/globals.css';
 import 'src/styles/variables.css';
+import '@/i18n/i18n';
 
+import i18next from 'i18next';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 import Header from '@/components/layout/Header';
-import { defaultThemeColor, gaTrackingId } from '@/constants/AppConfig';
+import {
+  defaultLanguage,
+  defaultThemeColor,
+  gaTrackingId,
+} from '@/constants/AppConfig';
 import { GlobalStyle } from '@/styles/globals.styled';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -26,6 +32,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     if (html) {
       setLoading(true);
+    }
+  });
+
+  useEffect(() => {
+    i18next.on('languageChanged', (lng) => {
+      document.documentElement.setAttribute('lang', lng);
+    });
+
+    const lng = localStorage.getItem('lng') || defaultLanguage;
+    if (lng) {
+      document.documentElement.setAttribute('lang', lng);
     }
   });
 
