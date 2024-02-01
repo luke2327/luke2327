@@ -4,7 +4,7 @@ export const extUrls = {
     'https://etherscan.io/address/0xd7346076Fc649A3E52E379F31d9c9Fb35f08d5Cb',
   foundation: 'https://foundation.app/@Luke2327?tab=owned',
   fmawo: 'https://fmawo.com',
-  aimyon: 'https://ai-myon.com'
+  aimyon: 'https://ai-myon.com',
 };
 
 export const extLinks = [
@@ -26,11 +26,11 @@ export const extLinks = [
   {
     head: 'Fmawo',
     url: extUrls.fmawo,
-    title: 'Fmawo - blog'
+    title: 'Fmawo - blog',
   },
   {
     head: 'Aimyon',
     url: extUrls.aimyon,
-    title: 'AIMYON'
-  }
+    title: 'AIMYON',
+  },
 ];

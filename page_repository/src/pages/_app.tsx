@@ -6,9 +6,8 @@ import i18next from 'i18next';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-import Header from '@/components/layout/Header';
 import {
   defaultLanguage,
   defaultThemeColor,

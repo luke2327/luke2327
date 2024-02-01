@@ -1,5 +1,3 @@
-import { useTheme } from 'next-themes';
-
 import {
   HsAnchor,
   HsArrowLink,
@@ -9,8 +7,8 @@ import {
   HsPeriod,
   HsSkillStack,
 } from '@/components/history/Historys';
-import type { History } from '@/constants/experienctHistory';
 import { defaultThemeColor } from '@/constants/AppConfig';
+import type { History } from '@/constants/experienctHistory';
 
 export default function ExperienceHistory(props: History) {
   return (

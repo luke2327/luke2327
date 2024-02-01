@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import skills from '@/constants/skillList';
 import { defaultThemeColor } from '@/constants/AppConfig';
+import skills from '@/constants/skillList';
 
 export default function SkillList() {
   return (

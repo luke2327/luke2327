@@ -4,15 +4,10 @@ export const associateShopsDomestic = [
   'ESM',
   'Interpark',
   '11st',
-  'Cafe24'
+  'Cafe24',
 ];
 
-export const associateShopsOverseas = [
-  'Amazon',
-  'eBay',
-  'Shopify',
-  'Qoo10',
-]
+export const associateShopsOverseas = ['Amazon', 'eBay', 'Shopify', 'Qoo10'];
 
 export const associateDelivers = [
   'FedEx',

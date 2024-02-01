@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 import {
   associateDelivers,
+  associateShopsDomestic,
   associateShopsOverseas,
-  associateShopsDomestic
 } from '@/constants/associateCompanyList';
 
 export default function LinkCard() {
