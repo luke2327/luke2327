@@ -23,5 +23,5 @@ const SkillListHeading = styled.h2`
   font-size: var(--luke2327-fontSizes-md);
   line-height: 1.2;
   margin-top: var(--luke2327-space-14);
-  margin-bottom: var(--luke2327-space-10);
+  margin-bottom: var(--luke2327-space-4);
 `;

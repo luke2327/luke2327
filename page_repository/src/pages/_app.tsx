@@ -6,9 +6,8 @@ import i18next from 'i18next';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-import Header from '@/components/layout/Header';
 import {
   defaultLanguage,
   defaultThemeColor,
@@ -17,21 +16,11 @@ import {
 import { GlobalStyle } from '@/styles/globals.styled';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [loading, setLoading] = useState(false);
-
   useEffect(() => {
     const localStorageTheme = localStorage.getItem('theme');
 
     if (!localStorageTheme) {
       localStorage.setItem('theme', defaultThemeColor);
-    }
-  });
-
-  useEffect(() => {
-    const html = document.querySelector(`html`);
-
-    if (html) {
-      setLoading(true);
     }
   });
 
@@ -66,23 +55,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-      {loading ? (
-        <>
-          <GlobalStyle />
-          <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
-            <Component {...pageProps} />
-          </ThemeProvider>
-        </>
-      ) : (
-        <>
-          <Header />
-          <div
-            className={'flex h-[100vh] w-[100vw] items-center justify-center'}
-          >
-            Loading...
-          </div>
-        </>
-      )}
+      <>
+        <GlobalStyle />
+        <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </>
     </>
   );
 }

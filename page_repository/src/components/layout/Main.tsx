@@ -19,8 +19,8 @@ export default function Main() {
         head={'Work Experience'}
         history={expHistory}
       />
-      <AssociateCompany />
       <Experience aria-level={2} head={'Side Projects'} history={spHistory} />
+      <AssociateCompany />
       <Link aria-level={2} />
     </div>
   );

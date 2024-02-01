@@ -51,8 +51,7 @@ const LinkCardWrapper = styled.div`
 
 const LinkTitle = styled.div`
   grid-column: span 4 / span 4;
-
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 340px) {
     grid-column: span 1 / span 1;
   }
 `;
@@ -62,7 +61,7 @@ const LinkTitleText = styled.p``;
 const LinkDescription = styled.div`
   grid-column: span 4 / span 4;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 340px) {
     grid-column: span 3 / span 3;
   }
 `;

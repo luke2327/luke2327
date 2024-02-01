@@ -7,7 +7,7 @@ module.exports = {
     defaultLocale: 'en-US',
     domains: [
       {
-        domain: 'resume.malihua.jp',
+        domain: 'resume.maplew.com',
         defaultLocale: 'en-US',
       },
     ],
