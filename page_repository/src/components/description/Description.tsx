@@ -11,7 +11,7 @@ export default function Description() {
         About
       </DescriptionHeading>
       <p aria-label={'introduction'}>
-        GM, Im Luke2327. I enjoy building dynamic, creative products from start
+        GM, Im Liam. I enjoy building dynamic, creative products from start
         to finish. Focused on developing intuitive experiences that constantly
         grow and improve based on user metrics. Always shipping.
       </p>

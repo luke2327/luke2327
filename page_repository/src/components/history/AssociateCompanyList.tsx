@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 import {
   associateDelivers,
-  associateShops,
+  associateShopsOverseas,
+  associateShopsDomestic
 } from '@/constants/associateCompanyList';
 
 export default function LinkCard() {
@@ -14,11 +15,22 @@ export default function LinkCard() {
             aria-label={`heading: Shop`}
             className={'associate-title-text'}
           >
-            Shop
+            Shop overseas
           </AssociateTitleText>
         </AssociateTitle>
         <AssociateDescription>
-          <p className={'flex'}>{associateShops.join(' • ')}</p>
+          <p className={'flex'}>{associateShopsOverseas.join(' • ')}</p>
+        </AssociateDescription>
+        <AssociateTitle>
+          <AssociateTitleText
+            aria-label={`heading: Shop`}
+            className={'associate-title-text'}
+          >
+            Shop domestic
+          </AssociateTitleText>
+        </AssociateTitle>
+        <AssociateDescription>
+          <p className={'flex'}>{associateShopsDomestic.join(' • ')}</p>
         </AssociateDescription>
         <AssociateTitle>
           <AssociateTitleText

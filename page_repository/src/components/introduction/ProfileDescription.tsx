@@ -17,16 +17,16 @@ export default function ProfileDescription({
           aria-label={'name'}
           className={'profile-heading'}
         >
-          Luke2327
+          Liam
         </ProfileHeading>
         <ProfileParagraph aria-label={'jobs'}>
           Product-focused Fullstack Developer
         </ProfileParagraph>
         <ProfileAnchor
-          aria-label={`link: ${extUrls.etherscan}`}
-          href={extUrls.etherscan}
+          aria-label={`link: ${extUrls.github}`}
+          href={extUrls.github}
         >
-          luke2327.eth
+          luke2327
         </ProfileAnchor>
       </div>
     </ProfileDescriptionWrapper>
@@ -57,4 +57,9 @@ const ProfileAnchor = styled.a`
   outline: 2px solid transparent;
   outline-offset: 2px;
   opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
 `;

@@ -7,7 +7,7 @@ export const HsHeading = styled.h2`
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: var(--luke2327-space-10);
+  margin-bottom: var(--luke2327-space-4);
 `;
 
 export const HsGrid = styled.div`

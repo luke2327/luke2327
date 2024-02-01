@@ -9,7 +9,7 @@
 /page_repository/coverage
 
 # next.js
-# /page_repository/.next/
+/page_repository/.next/
 /page_repository/out/
 
 # production

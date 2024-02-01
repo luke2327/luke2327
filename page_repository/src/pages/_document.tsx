@@ -37,7 +37,7 @@ class MyDocument extends Document {
     return (
       <Html lang={defaultLanguage}>
         <Head>
-          <title>Luke2327</title>
+          <title>Liam</title>
           <link
             rel="canonical"
             href="https://resume.malihua.jp"
@@ -45,17 +45,17 @@ class MyDocument extends Document {
           />
           <meta
             name={'description'}
-            content={`en: GM, Im Luke2327. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.`}
+            content={`en: GM, Im Liam. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.`}
           />
           <script
             type={'application/ld+json'}
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
-                '@context': 'https://resume.malihua.jp',
+                '@context': 'https://resume.maplew.jp',
                 '@type': 'WebSite',
-                name: 'Luke2327 introduction page',
-                alternateName: 'Luke2327',
-                url: 'https://resume.malihua.jp',
+                name: 'Liam resume page',
+                alternateName: 'Liam',
+                url: 'https://resume.maplew.jp',
                 headline: 'Analyzing Google Search traffic drops',
                 datePublished: '2023-03-20T08:00:00+08:00',
                 dateModified: '2023-03-20T09:20:00+08:00',

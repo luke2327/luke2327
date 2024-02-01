@@ -11,13 +11,13 @@ import type { Language } from './languages/en';
 
 export const locales: Record<
   SupportedLanguage,
-  Record<'translations', Language>
+  Record<'translation', Language>
 > = Object.assign(
   {},
   ...Object.keys(languages).map((index: unknown) => {
     return {
       [languages[index as number] as string]: {
-        translations: require(`./languages/${languages[index as number]}.ts`)
+        translation: require(`./languages/${languages[index as number]}.ts`)
           .default,
       },
     };
@@ -52,8 +52,8 @@ i18n
     detection,
     fallbackLng: defaultLanguage,
     resources: locales,
-    ns: ['translations'],
-    defaultNS: 'translations',
+    ns: ['translation'],
+    defaultNS: 'translation',
     returnObjects: true,
     debug: false,
     interpolation: {
