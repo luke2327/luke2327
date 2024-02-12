@@ -89,7 +89,7 @@ export const GlobalStyle = createGlobalStyle`
   :is(html.dark) :is(
     img.profile-img
   ) {
-    border: 1px solid white;
+    border: 0.5px solid white;
   }
 
   :is(html.light) :is(

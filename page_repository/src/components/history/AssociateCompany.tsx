@@ -7,7 +7,7 @@ export default function AssociateCompany() {
     <AssociateCompanyWrapper role={'Associate company'}>
       <AssociateCompanyHeading
         role={'heading'}
-        className={'associate-company-heading'}
+        className={'associate-company-heading text-xl xs:text-lg'}
       >
         Associate Company
       </AssociateCompanyHeading>
@@ -23,8 +23,7 @@ const AssociateCompanyWrapper = styled.div`
 const AssociateCompanyHeading = styled.h2`
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
-  font-size: var(--luke2327-fontSizes-md);
   line-height: 1.2;
-  margin-top: var(--luke2327-space-14);
+  margin-top: var(--luke2327-space-16);
   margin-bottom: var(--luke2327-space-4);
 `;

@@ -12,6 +12,7 @@ export type History = {
   period: string;
   skill: string[] | { label: string; icon: string }[];
   link?: string;
+  present?: boolean;
 };
 
 export const expHistory = [
@@ -27,6 +28,7 @@ export const expHistory = [
       ja: '',
     },
     period: '2022 - present',
+    present: true,
     skill: ['TS', 'Next', 'Nuxt', 'Express', 'Sequelize', 'ECS', 'MySQL'],
     link: 'https://eikoline.com',
   },

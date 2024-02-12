@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
-
-import Layout from '@/components/layout/Layout';
+import Main from '@/components/layout/Main';
 
 const Home: NextPage = () => {
-  return <Layout />;
+  return <Main aria-level={1} />;
 };
 
 export default Home;

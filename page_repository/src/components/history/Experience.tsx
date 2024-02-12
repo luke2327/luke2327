@@ -14,7 +14,7 @@ export default function Experience(props: INodeProps) {
         role={'heading'}
         aria-level={3}
         aria-label={`heading: ${props.head}`}
-        className={'history-heading'}
+        className={'history-heading text-xl xs:text-lg'}
       >
         {props.head}
       </HsHeading>
