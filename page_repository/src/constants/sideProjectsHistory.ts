@@ -13,6 +13,7 @@ export const spHistory = [
     link: 'https://ai-myon.com',
     period: '2024 - present',
     skill: ['TS', 'Next 14', 'Tailwind', 'Express', 'Drizzle', 'RDS'],
+    present: true,
   },
   {
     title: {
@@ -26,6 +27,7 @@ export const spHistory = [
     link: 'https://fmawo.com',
     period: '2023 - present',
     skill: ['TS', 'Next 14', 'Tailwind', 'Nest', 'RDS'],
+    present: true
   },
   {
     title: {
