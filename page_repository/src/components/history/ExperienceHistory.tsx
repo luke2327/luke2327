@@ -9,7 +9,6 @@ import {
 } from '@/components/history/Historys';
 import { defaultThemeColor } from '@/constants/AppConfig';
 import type { History } from '@/constants/experienctHistory';
-import { cn } from '@/lib/utils';
 
 export default function ExperienceHistory(props: History) {
   return (

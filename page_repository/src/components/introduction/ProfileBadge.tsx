@@ -57,10 +57,3 @@ const ProfileWrapperButton = styled.button`
 const Profile = styled.div`
   position: relative;
 `;
-
-const ProfileImg = styled.img`
-  width: 80%;
-  height: auto;
-  max-width: 100%;
-  filter: grayscale(0.5);
-`;
