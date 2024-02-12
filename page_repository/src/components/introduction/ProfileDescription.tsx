@@ -2,16 +2,10 @@ import styled from 'styled-components';
 
 import { extUrls } from '@/constants/externalLinks';
 
-type IProfileDescriptionProps = {
-  className: string;
-};
-
-export default function ProfileDescription({
-  className,
-}: IProfileDescriptionProps) {
+export default function ProfileDescription() {
   return (
-    <ProfileDescriptionWrapper className={className}>
-      <div>
+    <ProfileDescriptionWrapper>
+      <div className="hidden xs:block">
         <ProfileHeading
           role={'heading'}
           aria-label={'name'}
@@ -34,11 +28,18 @@ export default function ProfileDescription({
 }
 
 const ProfileDescriptionWrapper = styled.div`
-  grid-column: span 3 / span 3;
-  margin-bottom: var(--luke2327-space-14);
+  grid-column: span 4 / span 4;
+  margin-bottom: var(--luke2327-space-2);
+  padding-top: 0;
+
+  @media screen and (min-width: 360px) {
+    grid-column: span 3 / span 3;
+    margin-bottom: var(--luke2327-space-14);
+    padding-top: 1.75rem;
+  }
 `;
 
-const ProfileHeading = styled.h1`
+export const ProfileHeading = styled.h1`
   font-size: var(--luke2327-fontSizes-lg);
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
@@ -49,8 +50,8 @@ const ProfileHeading = styled.h1`
   }
 `;
 
-const ProfileParagraph = styled.p``;
-const ProfileAnchor = styled.a`
+export const ProfileParagraph = styled.p``;
+export const ProfileAnchor = styled.a`
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
