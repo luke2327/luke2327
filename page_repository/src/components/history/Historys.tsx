@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const HistoryWrapper = styled.div``;
+export const HistoryWrapper = styled.div`
+  margin-top: var(--luke2327-space-16);
+`;
 
 export const HsHeading = styled.h2`
-  font-size: var(--luke2327-fontSizes-md);
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
   line-height: 1.2;

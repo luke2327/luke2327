@@ -9,13 +9,14 @@ import {
 } from '@/components/history/Historys';
 import { defaultThemeColor } from '@/constants/AppConfig';
 import type { History } from '@/constants/experienctHistory';
+import { cn } from '@/lib/utils';
 
 export default function ExperienceHistory(props: History) {
   return (
     <HsGrid role={'row'}>
       <HsPeriod
         aria-label={`period: ${props.period}`}
-        className={'history-period'}
+        className={props.present ? 'history-period !text-gray-light': 'history-period'}
       >
         {props.period}
       </HsPeriod>
