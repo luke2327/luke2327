@@ -1,19 +1,17 @@
 import 'src/styles/globals.css';
 import 'src/styles/variables.css';
-import '@/i18n/i18n';
-
-import i18next from 'i18next';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 import { useEffect } from 'react';
 
 import {
-  defaultLanguage,
   defaultThemeColor,
   gaTrackingId,
 } from '@/constants/AppConfig';
 import { GlobalStyle } from '@/styles/globals.styled';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -21,17 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     if (!localStorageTheme) {
       localStorage.setItem('theme', defaultThemeColor);
-    }
-  });
-
-  useEffect(() => {
-    i18next.on('languageChanged', (lng) => {
-      document.documentElement.setAttribute('lang', lng);
-    });
-
-    const lng = localStorage.getItem('lng') || defaultLanguage;
-    if (lng) {
-      document.documentElement.setAttribute('lang', lng);
     }
   });
 
@@ -58,7 +45,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <>
         <GlobalStyle />
         <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
+          <Header aria-level={1} />
           <Component {...pageProps} />
+          <Footer aria-level={1} />
         </ThemeProvider>
       </>
     </>
