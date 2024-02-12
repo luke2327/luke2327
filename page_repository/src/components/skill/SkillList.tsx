@@ -2,16 +2,31 @@ import styled from 'styled-components';
 
 import { defaultThemeColor } from '@/constants/AppConfig';
 import skills from '@/constants/skillList';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export default function SkillList() {
   return (
     <div className={'flex flex-wrap gap-3'}>
       {skills.map((skill) => (
-        <SkillIcon
-          key={skill}
-          alt={skill}
-          src={`images/${defaultThemeColor}/${skill}.svg`}
-        />
+        <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger>
+            <SkillIcon
+              key={skill}
+              alt={skill}
+              src={`images/${defaultThemeColor}/${skill}.svg`}
+            />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>{skill}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
       ))}
     </div>
   );
