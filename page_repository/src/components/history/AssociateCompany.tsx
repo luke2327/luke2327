@@ -4,7 +4,7 @@ import AssociateCompanyList from '@/components/history/AssociateCompanyList';
 
 export default function AssociateCompany() {
   return (
-    <AssociateCompanyWrapper role={'Associate company'}>
+    <AssociateCompanyWrapper id="associate-company" role={'Associate company'}>
       <AssociateCompanyHeading
         role={'heading'}
         className={'associate-company-heading text-xl xs:text-lg'}

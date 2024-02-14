@@ -8,26 +8,34 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import AnimateItems from '../animate/AnimateItems';
 
 export default function SkillList() {
   return (
     <div className={'flex flex-wrap gap-3'}>
-      {skills.map((skill) => (
-        <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger>
-            <SkillIcon
-              key={skill}
-              alt={skill}
-              src={`images/${defaultThemeColor}/${skill}.svg`}
-            />
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>{skill}</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-      ))}
+      <AnimateItems
+        className={'flex flex-wrap gap-3 transition-all'}
+        duration={0.7}
+        staggerDelay={0.1}
+        distanceOffset={0}
+        staggerOnFirstLoadOnly
+        items={skills.map((skill, idx) => (
+          <TooltipProvider key={idx}>
+            <Tooltip>
+              <TooltipTrigger>
+                <SkillIcon
+                  key={skill}
+                  alt={skill}
+                  src={`images/${defaultThemeColor}/${skill}.svg`}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{skill}</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        ))}
+      />
     </div>
   );
 }

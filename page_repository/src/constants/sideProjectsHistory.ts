@@ -12,7 +12,7 @@ export const spHistory = [
     },
     link: 'https://ai-myon.com',
     period: '2024 - present',
-    skill: ['TS', 'Next 14', 'Tailwind', 'Express', 'Drizzle', 'RDS'],
+    skill: ['TS', 'Next 14', 'Tailwind', 'Express', 'Drizzle', 'PostgreSQL', 'SSG', 'ISR'],
     present: true,
   },
   {
@@ -26,7 +26,7 @@ export const spHistory = [
     },
     link: 'https://fmawo.com',
     period: '2023 - present',
-    skill: ['TS', 'Next 14', 'Tailwind', 'Nest', 'RDS'],
+    skill: ['TS', 'Next 14', 'Tailwind', 'Nest', 'RDS', 'SSG', 'ISR'],
     present: true
   },
   {

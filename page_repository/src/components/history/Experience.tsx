@@ -5,11 +5,12 @@ import type { History } from '@/constants/experienctHistory';
 type INodeProps = {
   head: string;
   history: History[];
+  id: string;
 };
 
 export default function Experience(props: INodeProps) {
   return (
-    <HistoryWrapper role={'row-group'} aria-label={'Experience'}>
+    <HistoryWrapper id={props.id} role={'row-group'} aria-label={'Experience'}>
       <HsHeading
         role={'heading'}
         aria-level={3}

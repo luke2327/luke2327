@@ -4,7 +4,7 @@ export const extUrls = {
     'https://etherscan.io/address/0xd7346076Fc649A3E52E379F31d9c9Fb35f08d5Cb',
   foundation: 'https://foundation.app/@Luke2327',
   fmawo: 'https://fmawo.com',
-  aimyon: 'https://aimyon.co.kr',
+  aimyon: 'https://ai-myon.com',
 };
 
 export const extLinks = [

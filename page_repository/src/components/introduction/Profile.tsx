@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import ProfileBadge from '@/components/introduction/ProfileBadge';
 import ProfileDescription from '@/components/introduction/ProfileDescription';
 
-export default function Profile() {
+export default function Profile(
+) {
   return (
     <ProfileArea
+      id="profile"
       aria-label={'profile'}
       className={'mx-auto grid w-full gap-1 p-0'}
     >

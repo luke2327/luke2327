@@ -11,7 +11,7 @@ export default function ProfileDescription() {
           aria-label={'name'}
           className={'profile-heading'}
         >
-          Liam
+          Liam<span className="text-gray-light opacity-70 text-sm">(Wonseok Choi)</span>
         </ProfileHeading>
         <ProfileParagraph aria-label={'jobs'}>
           Product-focused Fullstack Developer
@@ -44,6 +44,9 @@ export const ProfileHeading = styled.h1`
   font-family: var(--luke2327-fonts-heading);
   font-weight: 400;
   line-height: 1.33;
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
 
   @media screen and (min-width: 480px) {
     line-height: 1.2;
