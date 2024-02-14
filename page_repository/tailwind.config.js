@@ -10,6 +10,7 @@ module.exports = {
         xs: '360px',
         sm: '480px',
         md: '768px',
+        ld: '800px',
         lg: '976px',
         xl: '1440px',
       },
