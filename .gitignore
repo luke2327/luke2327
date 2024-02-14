@@ -35,3 +35,4 @@
 
 # typescript
 /page_repository/*.tsbuildinfo
+.vercel
