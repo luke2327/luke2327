@@ -37,10 +37,10 @@ class MyDocument extends Document {
     return (
       <Html lang={defaultLanguage}>
         <Head>
-          <title>Liam</title>
+          <title>Liam | Resume</title>
           <link
             rel="canonical"
-            href="https://resume.malihua.jp"
+            href="https://resume.maplew.com"
             key="canonical"
           />
           <meta
@@ -51,11 +51,11 @@ class MyDocument extends Document {
             type={'application/ld+json'}
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
-                '@context': 'https://resume.maplew.jp',
+                '@context': 'https://resume.maplew.com',
                 '@type': 'WebSite',
-                name: 'Liam resume page',
+                name: 'Liam | Resume',
                 alternateName: 'Liam',
-                url: 'https://resume.maplew.jp',
+                url: 'https://resume.maplew.com',
                 headline: 'Analyzing Google Search traffic drops',
                 datePublished: '2023-03-20T08:00:00+08:00',
                 dateModified: '2023-03-20T09:20:00+08:00',
