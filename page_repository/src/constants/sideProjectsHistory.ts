@@ -14,6 +14,7 @@ export const spHistory = [
     period: '2024 - present',
     skill: ['TS', 'Next 14', 'Tailwind', 'Express', 'Drizzle', 'PostgreSQL', 'SSG', 'ISR'],
     present: true,
+    hide: process.env.NODE_ENV === 'development' && false
   },
   {
     title: {
@@ -54,6 +55,7 @@ export const spHistory = [
     link: 'https://xenogents.github.io/LegionSolver',
     period: '2021 - 2021',
     skill: ['HTML', 'CSS'],
+    hide: process.env.NODE_ENV === 'development' && false
   },
   {
     title: {
@@ -79,6 +81,7 @@ export const spHistory = [
     },
     period: '2020 - 2021',
     skill: ['TS', 'Next', 'Serverless', 'MySQL', 'WebSocket'],
+    hide: process.env.NODE_ENV === 'development' && false
   },
   {
     title: {
@@ -92,6 +95,7 @@ export const spHistory = [
     period: '2020 - 2021',
     link: 'https://lms-manage-frontend.vercel.app',
     skill: ['TS', 'React', 'MaterialUI', 'Express'],
+    hide: process.env.NODE_ENV === 'development' && false
   },
   {
     title: {
@@ -104,5 +108,6 @@ export const spHistory = [
     },
     period: '2020 - 2021',
     skill: ['TS', 'MobX', 'Express', 'RDS', 'ECS'],
+    hide: process.env.NODE_ENV === 'development' && false
   },
 ] as History[];

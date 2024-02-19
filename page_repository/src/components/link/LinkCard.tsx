@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 import { extLinks } from '@/constants/externalLinks';
+import clsx from 'clsx';
 
 export default function LinkCard() {
   return (
     <>
-      {extLinks.map(({ head, title, url }, idx) => (
-        <LinkCardWrapper role={'row'} aria-rowindex={idx} key={idx}>
+      {extLinks.map(({ head, title, url, hide }, idx) => (
+        <LinkCardWrapper role={'row'} aria-rowindex={idx} key={idx} className={clsx(hide ? '!hidden' : '')}>
           <LinkTitle>
             <LinkTitleText
               aria-label={`heading: ${head}`}

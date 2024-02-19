@@ -13,6 +13,7 @@ export const extLinks = [
     url: extUrls.github,
     // title: '@luke2327',
     title: extUrls.github,
+    hide: process.env.NODE_ENV === 'development' && false
   },
   // {
   //   head: 'Etherscan',
@@ -30,6 +31,7 @@ export const extLinks = [
     url: extUrls.aimyon,
     // title: 'AIMYON',
     title: extUrls.aimyon,
+    hide: process.env.NODE_ENV === 'development' && false
   },
   // {
   //   head: 'Foundation',
