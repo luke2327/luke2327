@@ -12,6 +12,7 @@ import { motion, Variants } from 'framer-motion';
 import { IoIosArrowDown } from "react-icons/io";
 import AnimateItems from '../animate/AnimateItems';
 import Contact from '../contact/Contact';
+import clsx from 'clsx';
 
 const cardVariants: Variants = {
   offscreen: {
@@ -90,7 +91,7 @@ export default function Main() {
             <li><a href="#side-projects" className={currentNav === 'side-projects' ? 'text-gray-light' : ''}>Side Projects</a></li>
             <li><a href="#associate-company" className={currentNav === 'associate-company' ? 'text-gray-light' : ''}>Associate Company</a></li>
             <li><a href="#link" className={currentNav === 'link' ? 'text-gray-light' : ''}>Link</a></li>
-            <li><a href="#contact" className={currentNav === 'contact' ? 'text-gray-light' : ''}>Contact</a></li>
+            <li className={process.env.NODE_ENV === 'development' && false ? '!hidden' : ''}><a href="#contact" className={currentNav === 'contact' ? 'text-gray-light' : ''}>Contact</a></li>
           </ul>
         </nav>
       </aside>
@@ -119,7 +120,7 @@ export default function Main() {
             <Experience
               id="work-experience"
               aria-level={2}
-              head={'Work Experience'}
+              head={'Employment History'}
               history={expHistory}
             />
           </Card>
@@ -139,7 +140,7 @@ export default function Main() {
             <Link aria-level={2} />
           </Card>
         </div>
-        <div ref={contactRef}>
+        <div ref={contactRef} className={clsx(process.env.NODE_ENV === 'development' && false ? '!hidden' : '')}>
           <Card>
             <Contact aria-level={2} />
           </Card>

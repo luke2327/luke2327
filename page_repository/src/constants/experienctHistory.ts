@@ -13,6 +13,9 @@ export type History = {
   skill: string[] | { label: string; icon: string }[];
   link?: string;
   present?: boolean;
+  hide?: boolean;
+  nav?: string;
+  isJp?: boolean;
 };
 
 export const expHistory = [
@@ -31,6 +34,8 @@ export const expHistory = [
     present: true,
     skill: ['TS', 'Next', 'Nuxt', 'Express', 'Sequelize', 'ECS', 'MySQL'],
     link: 'https://eikoline.com',
+    nav: '/employment-history/eikoline',
+    isJp: true,
   },
   {
     title: {
@@ -46,6 +51,7 @@ export const expHistory = [
     period: '2021 - 2022',
     skill: ['TS', 'Next', 'Mobx', 'Serverless', 'Cognito', 'MySQL'],
     link: 'https://www.lingerstudio.com',
+    hide: process.env.NODE_ENV === 'development' && false,
   },
   {
     title: {
@@ -75,5 +81,6 @@ export const expHistory = [
     },
     period: '2017 - 2019',
     skill: ['TS', 'Angular', 'React', 'Gatsby', 'Express', 'MySQL'],
+    hide: process.env.NODE_ENV === 'development' && false,
   },
 ] as History[];

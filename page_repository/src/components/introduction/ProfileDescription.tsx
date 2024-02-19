@@ -11,7 +11,14 @@ export default function ProfileDescription() {
           aria-label={'name'}
           className={'profile-heading'}
         >
-          Liam<span className="text-gray-light opacity-70 text-sm">(Wonseok Choi)</span>
+          {
+            process.env.NODE_ENV === 'development' && false ? (
+              <>Choi wonseok</>
+            ) : (
+              <>Liam<span className="text-gray-light opacity-70 text-sm">(Wonseok Choi)</span></>
+            )
+          }
+          
         </ProfileHeading>
         <ProfileParagraph aria-label={'jobs'}>
           Product-focused Fullstack Developer
@@ -19,6 +26,7 @@ export default function ProfileDescription() {
         <ProfileAnchor
           aria-label={`link: ${extUrls.github}`}
           href={extUrls.github}
+          className={process.env.NODE_ENV === 'development' && false ? '!hidden' : ''}
         >
           luke2327
         </ProfileAnchor>

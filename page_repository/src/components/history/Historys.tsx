@@ -54,7 +54,7 @@ export const HsArrowLink = styled.img`
   transform: translateY(1px);
 `;
 
-export const HsDescription = styled.p`
+export const HsDescription = styled.div`
   margin-top: var(--luke2327-space-2);
   margin-bottom: var(--luke2327-space-2);
 `;
