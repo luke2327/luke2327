@@ -13,7 +13,7 @@ import {
 import { GlobalStyle } from '@/styles/globals.styled';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -49,25 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <AnimatePresence>
           <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
             <Header aria-level={1} />
-            <motion.div
-              initial="initial"
-              animate="in"
-              exit="out"
-              transition={{ duration: 0.5 }}
-              variants={{
-                initial: {
-                  opacity: 0
-                },
-                in: {
-                  opacity: 1
-                },
-                out: {
-                  opacity: 0
-                }
-              }}
-            >
-              <Component {...pageProps} />
-            </motion.div>
+            <Component {...pageProps} />
             <Footer aria-level={1} />
             <Analytics />
           </ThemeProvider>
