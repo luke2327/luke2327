@@ -13,8 +13,13 @@ const location = [
     asPath: 'employment-history'
   }, {
     label: 'Eikoline',
-    path: '/employment-history/eikoline',
+    path: '/employment-history/e/eikoline',
     asPath: 'eikoline',
+    default: 'hidden'
+  }, {
+    label: 'Linger',
+    path: '/employment-history/e/linger',
+    asPath: 'linger',
     default: 'hidden'
   }, {
     label: 'Side projects',
@@ -30,7 +35,7 @@ export default function Header() {
     const found = location.find(loc => loc.asPath === item);
 
     return found;
-  });
+  }).filter(Boolean);
 
   return (
     <header

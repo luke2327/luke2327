@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function Wrapper({ children }: { children: React.ReactNode }) {
   return (
-    <main className={'mx-auto px-4 pb-10 pt-14 sm:max-w-[36rem]'}>
+    <main className={'mx-auto px-4 pb-10 pt-10 sm:max-w-[36rem]'}>
       <section>
         <motion.div
           initial={{ opacity: 0 }}
