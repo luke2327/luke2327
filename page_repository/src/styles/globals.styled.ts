@@ -3,12 +3,16 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   html.light, html.light body, html.light body > div {
     color: var(--luke2327-colors-blackAlpha-700);
-    background-color: var(--luke2327-colors-white-500);
+    min-height: 100vh;
+    background: var(--luke2327-colors-white-500);
+    background-color: rgb(39,37,39);
   }
 
-  html.dark, html.dark body, html.dark body > div {
+  html.dark, html.dark body {
     color: var(--luke2327-colors-whiteAlpha-700);
-    background-color: var(--luke2327-colors-black-500);
+    min-height: 100vh;
+    background: var(--luke2327-colors-black-500);
+    background-color: rgb(39,37,39);
   }
 
   :is(html.dark) :is(
