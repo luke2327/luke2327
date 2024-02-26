@@ -48,9 +48,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <GlobalStyle />
         <AnimatePresence>
           <ThemeProvider attribute="class" defaultTheme={defaultThemeColor}>
-            <Header aria-level={1} />
-            <Component {...pageProps} />
-            <Footer aria-level={1} />
+            <main>
+              <Header aria-level={1} />
+              <Component {...pageProps} />
+              <Footer aria-level={1} />
+            </main>
             <Analytics />
           </ThemeProvider>
         </AnimatePresence>

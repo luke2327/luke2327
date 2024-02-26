@@ -47,6 +47,8 @@ class MyDocument extends Document {
             name={'description'}
             content={`en: GM, Im Liam. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.`}
           />
+          <meta name="theme-color" content="#272527" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="#272527" />
           <script
             type={'application/ld+json'}
             dangerouslySetInnerHTML={{
