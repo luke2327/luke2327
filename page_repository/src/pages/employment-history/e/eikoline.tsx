@@ -5,8 +5,7 @@ export default function PortfolioData() {
   return (
     <Wrapper>
       <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
-        Eikoline
-        <span className="text-lg text-[#c8c1bd]">(株式会社エイコーライン)</span>
+        Eikoline Inc.
         <div className="text-sm bg-[#fff] text-[#000] px-1.5 rounded-md">JP</div>
       </h1>
       <div className="mt-1">
