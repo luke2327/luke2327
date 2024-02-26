@@ -12,7 +12,7 @@ export default function ProfileDescription() {
           className={'profile-heading'}
         >
           {
-            process.env.NODE_ENV === 'development' && false ? (
+            process.env.NODE_ENV === 'development' ? (
               <>Choi wonseok</>
             ) : (
               <>Liam<span className="text-gray-light opacity-70 text-sm">(Wonseok Choi)</span></>
@@ -26,7 +26,7 @@ export default function ProfileDescription() {
         <ProfileAnchor
           aria-label={`link: ${extUrls.github}`}
           href={extUrls.github}
-          className={process.env.NODE_ENV === 'development' && false ? '!hidden' : ''}
+          className={process.env.NODE_ENV === 'development' ? '!hidden' : ''}
         >
           luke2327
         </ProfileAnchor>

@@ -1,32 +1,65 @@
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import LanguageSelect from "../tools/LanguageSelect";
+import useCurrentLanguage from "@/lib/useCurrentLanguage";
 
 const location = [
   {
     label: '/',
-    path: '/',
+    path: {
+      en: '/',
+      ko: '/ko',
+      ja: '/ja'
+    },
     asPath: ''
   }, {
     label: 'Employment History',
-    path: '/employment-history',
+    path: {
+      en: '/employment-history',
+      ko: '/ko/employment-history',
+      ja: '/ja/employment-history'
+    },
     asPath: 'employment-history'
   }, {
     label: 'Eikoline',
-    path: '/employment-history/e/eikoline',
+    path: {
+      en: '/employment-history/e/eikoline',
+      ko: '/ko/employment-history/e/eikoline',
+      ja: '/ja/employment-history/e/eikoline'
+    },
     asPath: 'eikoline',
     default: 'hidden'
   }, {
     label: 'Linger',
-    path: '/employment-history/e/linger',
+    path: {
+      en: '/employment-history/e/linger',
+      ko: '/ko/employment-history/e/linger',
+      ja: '/ja/employment-history/e/linger'
+    },
     asPath: 'linger',
     default: 'hidden'
   }, {
+    label: 'Playauto',
+    path: {
+      en: '/employment-history/e/playauto',
+      ko: '/ko/employment-history/e/playauto',
+      ja: '/ja/employment-history/e/playauto'
+    },
+    asPath: 'playauto',
+    default: 'hidden'
+  }, {
     label: 'Side projects',
-    path: '/employment-history',
+    path: {
+      en: '/side-projects',
+      ko: '/ko/side-projects',
+      ja: '/ja/side-projects'
+    },
     asPath: 'employment-history'
   }
 ]
+
+const RootDomain = ['/', '/ko', '/ja'];
 
 export default function Header() {
   const { pathname, asPath } = useRouter();
@@ -36,6 +69,7 @@ export default function Header() {
 
     return found;
   }).filter(Boolean);
+  const currentLanguage = useCurrentLanguage();
 
   return (
     <header
@@ -44,7 +78,7 @@ export default function Header() {
           'flex items-center justify-between',
           'fixed top-0 z-10',
           'w-full p-4',
-          'md:bg-opacity-0 bg-[#000]'
+          'md:bg-opacity-0 backdrop-blur md:backdrop-blur-0'
         )
       }
     >
@@ -54,11 +88,11 @@ export default function Header() {
           'gap-4')}
         >
         {
-          pathname === '/' ? (
+          RootDomain.includes(pathname) ? (
             <>
               {
                 location.filter(loc => loc.default !== 'hidden').map((item, idx) => (
-                  <Link locale="en" key={idx} href={item.path} className={clsx(asPath === item.path ? 'text-[#fff]' : '', 'px-2')}>
+                  <Link key={idx} href={item.path[currentLanguage]} className={clsx(asPath === item.path[currentLanguage] ? 'text-[#fff]' : '', 'px-2')}>
                     {item.label}
                   </Link>
                 ))
@@ -68,7 +102,7 @@ export default function Header() {
             <>
               {
                 routes.map((item, idx) => (
-                  <Link key={idx} href={item.path} className={clsx(asPath === item.path ? 'text-[#fff]' : '', 'px-2')}>
+                  <Link key={idx} href={item.path[currentLanguage]} className={clsx(asPath === item.path[currentLanguage] ? 'text-[#fff]' : '', 'px-2')}>
                     {item.label}
                   </Link>
                 ))
@@ -77,10 +111,9 @@ export default function Header() {
           )
         }
       </nav>
-      <div className={'flex items-center justify-between gap-4'}>
-        {/* <Languages strokeWidth={1.5} /> */}
-        {/* <LanguageSelect />
-        <ThemeToggle /> */}
+      <div className={'flex items-center justify-between gap-4 self-start'}>
+        <LanguageSelect />
+        {/* <ThemeToggle /> */}
       </div>
     </header>
   );

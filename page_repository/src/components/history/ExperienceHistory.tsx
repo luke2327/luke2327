@@ -9,14 +9,16 @@ import {
 } from '@/components/history/Historys';
 import { defaultThemeColor } from '@/constants/AppConfig';
 import type { History } from '@/constants/experienctHistory';
+import useCurrentLanguage from '@/lib/useCurrentLanguage';
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
 
 export default function ExperienceHistory(props: History) {
+  const currentLanguage = useCurrentLanguage();
   const router = useRouter();
   const link = () => {
     if (props.nav) {
-      router.push(props.nav);
+      router.push(props.nav[currentLanguage]);
     }
   }
 
@@ -31,18 +33,19 @@ export default function ExperienceHistory(props: History) {
         aria-label={`period: ${props.period}`}
         className={props.present ? 'history-period !text-gray-light': 'history-period'}
       >
-        {props.period}
+        {props.period[currentLanguage]}
       </HsPeriod>
       <HsCard>
         <HsAnchor
-          aria-label={`title: ${props.title.en}`}
+          aria-label={`title: ${props.title[currentLanguage]}`}
           className={'history-anchor group'}
           href={props.link}
+          target='_blank'
         >
-          {props.title.en}
+          {props.title[currentLanguage]}
           {props.link && (
             <HsArrowLink
-              alt={`link: ${props.title.en}`}
+              alt={`link: ${props.title[currentLanguage]}`}
               width={14}
               height={14}
               src={`/images/${defaultThemeColor}/arrow-link.svg`}
@@ -59,15 +62,15 @@ export default function ExperienceHistory(props: History) {
           {props.isJp && <div className="text-sm bg-[#fff] text-[#000] px-1.5 rounded-md ml-1">JP</div>}
         </HsAnchor>
         <div className='hover:text-[#fff] cursor-pointer'>
-          <HsDescription aria-label={`description: ${props.description.en}`}>
+          <HsDescription aria-label={`description: ${props.description[currentLanguage]}`}>
             <div className="flex flex-col gap-4">
-              <p>{props.description.en}</p>
-              <p className="text-right">Read more...</p>
+              <p>{props.description[currentLanguage]}</p>
+              {props.nav && <p className="text-right">Read more...</p>}
             </div>
           </HsDescription>
           <HsSkillStack
             aria-label={`skill-stack: ${props.skill.join()}`}
-            className={'history-skill-stack flex'}
+            className={'history-skill-stack flex mt-4'}
           >
             {props.skill.join(' • ')}
           </HsSkillStack>

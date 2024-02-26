@@ -13,7 +13,7 @@ export default function ProfileBadge() {
             alt={'luke2327 profile image'}
             width={85}
             height={85}
-            src={process.env.NODE_ENV === 'development' && false ? '/images/4963BF28-9DA0-4DAA-9DF1-22194881E47A.jpeg' : `/profile.webp`}
+            src={process.env.NODE_ENV === 'development' ? '/images/4963BF28-9DA0-4DAA-9DF1-22194881E47A.jpeg' : `/profile.webp`}
           />
         </Profile>
       </ProfileWrapperButton>

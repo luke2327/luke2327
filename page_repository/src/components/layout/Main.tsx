@@ -13,6 +13,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import AnimateItems from '../animate/AnimateItems';
 import Contact from '../contact/Contact';
 import clsx from 'clsx';
+import useCurrentLanguage from '@/lib/useCurrentLanguage';
 
 const cardVariants: Variants = {
   offscreen: {
@@ -25,6 +26,8 @@ const cardVariants: Variants = {
 const OFFSET = 80;
 
 export default function Main() {
+  const language = useCurrentLanguage();
+
   const [scrollIcon, setScrollIcon] = useState<boolean>(true);
   const [currentNav, setCurrentNav] = useState<string>("profile");
   const profileRef = useRef<HTMLDivElement>(null);
@@ -91,7 +94,7 @@ export default function Main() {
             <li><a href="#side-projects" className={currentNav === 'side-projects' ? 'text-gray-light' : ''}>Side Projects</a></li>
             <li><a href="#associate-company" className={currentNav === 'associate-company' ? 'text-gray-light' : ''}>Associate Company</a></li>
             <li><a href="#link" className={currentNav === 'link' ? 'text-gray-light' : ''}>Link</a></li>
-            <li className={process.env.NODE_ENV === 'development' && false ? '!hidden' : ''}><a href="#contact" className={currentNav === 'contact' ? 'text-gray-light' : ''}>Contact</a></li>
+            <li className={process.env.NODE_ENV === 'development' ? '!hidden' : ''}><a href="#contact" className={currentNav === 'contact' ? 'text-gray-light' : ''}>Contact</a></li>
           </ul>
         </nav>
       </aside>
@@ -105,7 +108,7 @@ export default function Main() {
               staggerOnFirstLoadOnly
               items={[
                 <Profile aria-level={2} />,
-                <Description aria-level={2} />  
+                <Description aria-level={2} language={language} />  
               ]}
             />
           </Card>
@@ -140,7 +143,7 @@ export default function Main() {
             <Link aria-level={2} />
           </Card>
         </div>
-        <div ref={contactRef} className={clsx(process.env.NODE_ENV === 'development' && false ? '!hidden' : '')}>
+        <div ref={contactRef} className={clsx(process.env.NODE_ENV === 'development' ? '!hidden' : '')}>
           <Card>
             <Contact aria-level={2} />
           </Card>
