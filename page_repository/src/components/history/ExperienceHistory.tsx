@@ -12,6 +12,7 @@ import type { History } from '@/constants/experienctHistory';
 import useCurrentLanguage from '@/lib/useCurrentLanguage';
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
+import Image from 'next/image'
 
 export default function ExperienceHistory(props: History) {
   const currentLanguage = useCurrentLanguage();
@@ -38,10 +39,11 @@ export default function ExperienceHistory(props: History) {
       <HsCard>
         <HsAnchor
           aria-label={`title: ${props.title[currentLanguage]}`}
-          className={'history-anchor group'}
+          className={'history-anchor group flex !items-end'}
           href={props.link}
           target='_blank'
         >
+          {props.ico && <Image src={props.ico} width={28} height={28} alt="icon" className={clsx("pr-0.5", props.icoClass ? props.icoClass : '')} />}
           {props.title[currentLanguage]}
           {props.link && (
             <HsArrowLink
@@ -61,11 +63,11 @@ export default function ExperienceHistory(props: History) {
           </p>
           {props.isJp && <div className="text-sm bg-[#fff] text-[#000] px-1.5 rounded-md ml-1">JP</div>}
         </HsAnchor>
-        <div className='hover:text-[#fff] cursor-pointer'>
-          <HsDescription aria-label={`description: ${props.description[currentLanguage]}`}>
-            <div className="flex flex-col gap-4">
-              <p>{props.description[currentLanguage]}</p>
-              {props.nav && <p className="text-right">Read more...</p>}
+        <div className='cursor-pointer'>
+          <HsDescription className="hover:text-[#fff]" aria-label={`description: ${props.description[currentLanguage]}`}>
+            <div className="flex flex-col gap-4 group items-end">
+              <p className="self-start">{props.description[currentLanguage]}</p>
+              {props.nav && <span className={clsx("text-right w-[84px]", props.readMoreClass)}>Read more...</span>}
             </div>
           </HsDescription>
           <HsSkillStack

@@ -1,28 +1,44 @@
-import Wrapper from "@/components/layout/Wrapper"
-import Image from 'next/image'
+import Wrapper from '@/components/layout/Wrapper';
+import Image from 'next/image';
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
-        <Image src="/favicon_frifee.png" width={32} height={32} alt="frifee" className="self-end" />
+      <h1 className="flex items-baseline gap-2 pt-6 text-2xl text-[#fff]">
+        <Image
+          src="/favicon_frifee.png"
+          width={32}
+          height={32}
+          alt="frifee"
+          className="self-end invert-[.35]"
+        />
         Frifee Inc.
+        <span className="text-lg text-[#c8c1bd]">(주식회사 프라이피)</span>
       </h1>
       <div className="mt-1">
         <p>
-          Overseas soccer, baseball, basketball score matching, live linking, line-up, news, and VOD service in 6 languages respectively.
+          해외 축구, 야구, 농구 스코어 매칭, 라이브 링크, 라인업, 뉴스, VOD
+          서비스를 각각 6개 언어로 서비스하였으며, tymX코인을 이용하여 dApp을
+          개발 하였습니다.
         </p>
       </div>
       <div className="mt-8">
-        <h2 className="text-xl text-[#fff] flex gap-2 items-baseline justify-between">
-          Blockchain front-end development using React, Gatsby and ChartJS
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">February 2019 - May 2022</span>
+        <h2 className="flex items-baseline justify-between gap-2 text-xl text-[#fff]">
+          dApp 사이트 개발
+          <span className="whitespace-nowrap text-sm text-[#c8c1bd]">
+            2019. 02 - 2019. 06
+          </span>
         </h2>
-        <p>Create EOS dApp site using blockchain system</p>
+        <p>
+          tymX코인과 블록체인 기술 및 React, Gatsby, ChartJS 모듈을 사용하여
+          dApp을 런칭 하였습니다.
+        </p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Main 20 page publishing UI development</li>
-          <li className="text-[#fff]">- AWS RDS, ECS, ECR configurations</li>
-          <li className="text-[#fff]">- Site SEO configurations</li>
+          <li className="text-[#fff]">- 메인 20페이지 분량 개발</li>
+          <li className="text-[#fff]">
+            - AWS RDS, ECS, ECR 서비스를 이용하여 배포
+          </li>
+          <li className="text-[#fff]">- 페이지 SEO 설정</li>
         </ul>
         <div className="mt-2">
           <div className="flex gap-2">
@@ -44,14 +60,16 @@ export default function PortfolioData() {
         </div>
       </div>
       <div className="mt-8">
-        <h2 className="text-xl text-[#fff] flex gap-2 items-baseline justify-between">
-          Soccer transfer market stock site using tymX coin as the main focus
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">June 2018 - January 2019</span>
+        <h2 className="flex items-baseline justify-between gap-2 text-xl text-[#fff]">
+          이적시장 주식 사이트 개발
+          <span className="whitespace-nowrap text-sm text-[#c8c1bd]">
+            2018. 06 - 2019. 01
+          </span>
         </h2>
-        <p>Participate in projects using Angular, MaterialUI</p>
+        <p>Angular, MaterialUI 모듈을 이용하여 런칭 하였습니다.</p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Main and Admin page development</li>
-          <li className="text-[#fff]">- I18N (Korean, English)</li>
+          <li className="text-[#fff]">- 메인 40페이지 및 백오피스 개발</li>
+          <li className="text-[#fff]">- I18N (한국어, 영어)</li>
         </ul>
         <div className="mt-2">
           <div className="flex gap-2">
@@ -74,15 +92,19 @@ export default function PortfolioData() {
         </div>
       </div>
       <div className="mt-8">
-        <h2 className="text-xl text-[#fff] flex gap-2 items-baseline justify-between">
-          Development news generation service
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">May 2018 - June 2019</span>
+        <h2 className="flex items-baseline justify-between gap-2 text-xl text-[#fff]">
+          뉴스 생성 서비스 개발
+          <span className="whitespace-nowrap text-sm text-[#c8c1bd]">
+            2018. 05 - 2018. 06
+          </span>
         </h2>
-        <p>Development of independent news production service using Flask</p>
+        <p>
+          Flask 를 이용하여 뉴스 생성 서비스를 개발하여, 실시간 이슈에
+          대응하였습니다.
+        </p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Receive data in input form and generate MD source</li>
-          <li className="text-[#fff]">- Develop post-creation upload, modification, and deletion capabilities to AWS S3 storage</li>
-          <li className="text-[#fff]">- Routing and server configuration</li>
+          <li className="text-[#fff]">- 데이터를 입력받아 MD파일로 정적생성</li>
+          <li className="text-[#fff]">- 생성(업로드), 수정, 삭제작업 개발</li>
         </ul>
         <div className="mt-2">
           <div className="flex gap-2">
@@ -101,22 +123,27 @@ export default function PortfolioData() {
         </div>
       </div>
       <div className="mt-8">
-        <h2 className="text-xl text-[#fff] flex gap-2 items-baseline justify-between">
-          Development admin page of our office
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">April 2018 - May 2019</span>
+        <h2 className="flex items-baseline justify-between gap-2 text-xl text-[#fff]">
+          어드민 페이지 개발
+          <span className="whitespace-nowrap text-sm text-[#c8c1bd]">
+            2018. 04 - 2018. 05
+          </span>
         </h2>
-        <p>Development an admin page to control the content within the our application</p>
+        <p>서비스중인 콘텐츠를 제어할 수 있는 어드민 페이지 개발 하였습니다.</p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- RDS connection using ORM</li>
-          <li className="text-[#fff]">- Reduce development time with using Django</li>
-          <li className="text-[#fff]">- Create a bulletin board to receive inconvenience and improve it</li>
+          <li className="text-[#fff]">- ORM을 통한 RDS 연결</li>
+          <li className="text-[#fff]">
+            - Django를 이용하여 개발에 필요한 리소스 절약
+          </li>
+          <li className="text-[#fff]">
+            - 불편사항 접수 및 개선을 위한 게시판 제작
+          </li>
         </ul>
         <div className="mt-2">
           <div className="flex gap-2">
             <p className="text-[#fff]">front-end</p>
             <ul className="flex gap-2">
-              <li>Django</li>
-              <li>ORM</li>
+              <li>Django / ORM</li>
               <li>SASS</li>
             </ul>
           </div>
@@ -129,26 +156,38 @@ export default function PortfolioData() {
         </div>
       </div>
       <div className="mt-8">
-        <h2 className="text-xl text-[#fff] flex gap-2 items-baseline justify-between">
-          Development crawling machine used by our company
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">November 2017 - May 2019</span>
+        <h2 className="flex items-baseline justify-between gap-2 text-xl text-[#fff]">
+          크롤링 머신 개발
+          <span className="whitespace-nowrap text-sm text-[#c8c1bd]">
+            2017. 11 - 2019. 05
+          </span>
         </h2>
-        <p>Crawled about 400 news and sports sites</p>
+        <p>
+          어플리케이션에서 사용되는 약 400개 가량의 스포츠 사이트의 크롤링
+          머신을 개발 하였습니다.
+        </p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Use Scrapy module and crawl Webpage, YouTube, Facebook, ...</li>
-          <li className="text-[#fff]">- Pre-Mapping for different sports player names in different countries</li>
-          <li className="text-[#fff]">- Optimizing loading speed with (crawled)image resizing</li>
-          <li className="text-[#fff]">- Scheduling jobs via cron</li>
+          <li className="text-[#fff]">
+            - Scrap 모듈을 이용하여 Webpage, YouTube, Facebook 등 크롤링
+          </li>
+          <li className="text-[#fff]">
+            - 나라마다 각기다른 선수이름을 매칭하는 사전 개발
+          </li>
+          <li className="text-[#fff]">
+            - 크롤링 된 이미지의 리사이징 작업을 통한 최적화
+          </li>
+          <li className="text-[#fff]">- cron을 통해 작업 스케줄링</li>
         </ul>
         <div className="mt-2">
           <div className="flex gap-2">
             <p className="text-[#fff]">back-end</p>
             <ul className="flex gap-2">
               <li>Scrapy</li>
+              <li>Puppeteer</li>
             </ul>
           </div>
         </div>
       </div>
     </Wrapper>
-  )
+  );
 }

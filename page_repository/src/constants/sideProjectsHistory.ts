@@ -18,9 +18,18 @@ export const spHistory = [
       ko: '2023 - 진행중',
       ja: '2023 - 現在',
     },
-    skill: ['TS', 'Next 14', 'Tailwind', 'Express', 'Drizzle', 'PostgreSQL', 'SSG', 'ISR'],
+    skill: [
+      'TS',
+      'Next 14',
+      'Tailwind',
+      'Express',
+      'Drizzle',
+      'PostgreSQL',
+      'SSG',
+      'ISR',
+    ],
     present: true,
-    hide: process.env.NODE_ENV === 'development'
+    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {
@@ -40,7 +49,7 @@ export const spHistory = [
       ja: '2022 - 現在',
     },
     skill: ['TS', 'Next 14', 'Tailwind', 'Nest', 'RDS', 'SSG', 'ISR'],
-    present: true
+    present: true,
   },
   {
     title: {
@@ -79,13 +88,13 @@ export const spHistory = [
       ja: '2021 - 2021',
     },
     skill: ['HTML', 'CSS'],
-    hide: process.env.NODE_ENV === 'development'
+    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {
-      en: 'Jet lag',
-      ko: '시차 계산기',
-      ja: '時差計算機',
+      en: 'Jetlag',
+      ko: 'Jetlag',
+      ja: 'Jetlag',
     },
     description: {
       en: `Let's reduce fatigue by calculating the time difference in advance.`,
@@ -117,7 +126,7 @@ export const spHistory = [
       ja: '2020 - 2021',
     },
     skill: ['TS', 'Next', 'Serverless', 'MySQL', 'WebSocket'],
-    hide: process.env.NODE_ENV === 'development'
+    hide: true,
   },
   {
     title: {
@@ -127,7 +136,7 @@ export const spHistory = [
     },
     description: {
       en: `Application that college student assignment management.`,
-      ko: '교수님들을 위한 대학생 과제관리 어플리케이션입니다.',
+      ko: '교수님들을 위한 대학생 과제관리 애플리케이션입니다.',
       ja: '教授のための大学生課題管理アプリケーションです。',
     },
     period: {
@@ -137,7 +146,7 @@ export const spHistory = [
     },
     link: 'https://lms-manage-frontend.vercel.app',
     skill: ['TS', 'React', 'MaterialUI', 'Express'],
-    hide: process.env.NODE_ENV === 'development'
+    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {
@@ -156,6 +165,6 @@ export const spHistory = [
       ja: '2020 - 2021',
     },
     skill: ['TS', 'MobX', 'Express', 'RDS', 'ECS'],
-    hide: process.env.NODE_ENV === 'development'
+    hide: true,
   },
 ] as History[];

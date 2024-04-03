@@ -1,9 +1,11 @@
 import Wrapper from "@/components/layout/Wrapper"
+import Image from 'next/image'
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
+      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
+        <Image src="/favicon_playauto.ico" width={32} height={32} alt="playauto" className="self-end" />
         Playauto Inc.
       </h1>
       <div className="mt-1">
@@ -14,7 +16,7 @@ export default function PortfolioData() {
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
           Management of the solution's server
-          <span className="text-sm text-[#c8c1bd]">2019. 08 - 2020. 10</span>
+          <span className="text-sm text-[#c8c1bd]">August 2019 - October 2020</span>
         </h2>
         <ul className="mt-2 flex flex-col gap-0.5">
           <li className="text-[#fff] flex items-baseline">
@@ -49,7 +51,7 @@ export default function PortfolioData() {
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
           Replacing Table Modules
-          <span className="text-sm text-[#c8c1bd]">2020. 09 - 2020. 10</span>
+          <span className="text-sm text-[#c8c1bd]">September 2020 - October 2020</span>
         </h2>
         <p>Led the table module replacement project to enhance database efficiency and reliability.</p>
         <div className="mt-2">

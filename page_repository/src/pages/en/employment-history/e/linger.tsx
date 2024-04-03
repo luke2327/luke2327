@@ -1,10 +1,12 @@
 import Wrapper from "@/components/layout/Wrapper"
 import { MdKeyboardArrowRight } from "react-icons/md"
+import Image from 'next/image'
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
+      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
+        <Image src="/favicon_linger.svg" width={32} height={32} alt="linger" className="self-end" />
         Linger Corp.
       </h1>
       <div className="mt-1">
@@ -15,7 +17,7 @@ export default function PortfolioData() {
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
           Linger studio
-          <span className="text-sm text-[#c8c1bd]">2021. 08 - 2022. 01</span>
+          <span className="text-sm text-[#c8c1bd]">August 2021 - January 2022</span>
         </h2>
         <p>A platform for trading digital sound sources</p>
         <ul className="mt-2 flex flex-col gap-0.5">
@@ -43,7 +45,7 @@ export default function PortfolioData() {
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
           Linger gallery
-          <span className="text-sm text-[#c8c1bd]">2021. 08 - 2021. 10</span>
+          <span className="text-sm text-[#c8c1bd]">August 2021 - October 2021</span>
         </h2>
         <p>Japanesque fashion e-commerce platform</p>
         <ul className="mt-2 flex flex-col gap-0.5">

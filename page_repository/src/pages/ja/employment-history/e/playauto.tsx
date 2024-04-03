@@ -1,29 +1,31 @@
 import Wrapper from "@/components/layout/Wrapper"
+import Image from 'next/image'
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
+      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
+        <Image src="/favicon_playauto.ico" width={32} height={32} alt="playauto" className="self-end" />
         Playauto Inc.
       </h1>
       <div className="mt-1">
         <p>
-        Integrating e-commerce platforms, managing orders and inventory, and developing solutions for label printing and shipping cost calculations.
+        国内および日本のオンラインセラーのための電子商取引統合管理ソリューションを開発しました。
         </p>
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          Management of the solution's server
+          ソリューション管理
           <span className="text-sm text-[#c8c1bd]">2019. 08 - 2020. 10</span>
         </h2>
         <ul className="mt-2 flex flex-col gap-0.5">
           <li className="text-[#fff] flex items-baseline">
             <p className="w-8">1.</p>
-            <span>Managing servers primarily using AWS services such as EC2, ECS, ECR, Route53, CloudFront, Lambda, and S3.</span>
+            <span>以下のAWSサービスを利用してサーバーを管理しました。<br />(EC2、ECS、ECR、Route53、CloudFront、Lambda、S3)</span>
           </li>
           <li className="text-[#fff] flex items-baseline">
             <p className="w-8">2.</p>
-            <span>Performed routine maintenance and updates to web applications using AngularJS, ensuring high performance and responsiveness.</span>
+            <span>AngularJS及びActionheroを利用してメンテナンス及び新機能を導入し、反応型UIを追加してUXを向上させました。</span>
           </li>
         </ul>
         <div className="mt-2">
@@ -48,10 +50,10 @@ export default function PortfolioData() {
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          Replacing Table Modules
+          テーブルモジュールを交換します
           <span className="text-sm text-[#c8c1bd]">2020. 09 - 2020. 10</span>
         </h2>
-        <p>Led the table module replacement project to enhance database efficiency and reliability.</p>
+        <p>データベースの効率性と安定性を向上させるために、古いテーブル モジュールを交換しました。</p>
         <div className="mt-2">
           <div className="flex gap-2">
             <p className="text-[#fff]">module</p>
@@ -63,56 +65,56 @@ export default function PortfolioData() {
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          New Feature Development for Delivery Solution Company
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">July 2020 - August 2020</span>
+          配送サービスの追加です
+          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">2020. 07 - 2020. 08</span>
         </h2>
-        <p>Rapidly developed new functionalities in response to sudden support changes by FedEx and DHL for clients using JPPOST (EMS), FedEx, and DHL in Japan.</p>
+        <p>日本の郵便局、FedEx、DHLをご利用のお客様を対象に、急なサポート変更に対応し、迅速に新機能を開発しました。</p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Added new courier delivery services: 9 for FedEx and 2 for DHL</li>
-          <li className="text-[#fff]">- Implemented pick-up request features for all three courier services</li>
+          <li className="text-[#fff]">- 新規宅配サービス追加:FedEx 9件、DHL 2件</li>
+          <li className="text-[#fff]">- 3種類の宅配サービスに対するピックアップ要請機能の実装</li>
         </ul>
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          Frontend Development: Babel Implementation for Solution and Admin Interfaces
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">May 2020</span>
+          ソリューション管理向上のためにBabelを導入します
+          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">2020. 05</span>
         </h2>
-        <p>Integrated Babel, a code transpiler, into the frontend codebase to enhance cross-browser compatibility and modern JavaScript features usage.</p>
+        <p>コードトランスファイラーであるBabelをフロントエンドのコードベースに統合し、ブラウザ間の互換性と最新のJavaScript機能の使用を可能にします。</p>
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          Payment Feature Development for Solution Platform
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">March 2020 - June 2020</span>
+          ソリューションに決済機能を導入します
+          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">2020. 03 - 2020. 06</span>
         </h2>
-        <p>Developed and integrated payment functionalities and additional features into a previously free solution, significantly increasing user acquisition.</p>
-        <p className="mt-2">Maintained continuous communication with conservative and demanding Japanese payment gateway providers, utilizing Japanese-language reference documents for development</p>
+        <p>既存の無料ソリューションに支払いと追加機能を開発し、ユーザーを獲得しました。</p>
+        <p className="mt-2">日本PG社と持続的な疎通、開発に日本語リファレンス文書を活用します</p>
         <ul className="mt-2 flex flex-col gap-0.5">
-          <li className="text-[#fff]">- Add Credit Card, PayPal, and Convenience Store Payment Options</li>
+          <li className="text-[#fff]">- クレジットカード、PayPal、コンビニ決済オプションを追加します</li>
         </ul>
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          New Development of Solution Admin Panel
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">January 2020 - February 2020</span>
+          アドミン専用ページの改善です
+          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">2020. 01 - 2020. 02</span>
         </h2>
-        <p>Revamped the outdated and error-prone admin panel with a modernized design and architecture.</p>
+        <p>見やすいUIに変更及びエラーが発生しやすかったコードを改善しました。</p>
         <ul className="mt-2 flex flex-col gap-0.5">
           <li className="text-[#fff] flex items-baseline">
             <p className="w-5">-</p>
-            <span>Significantly improved code efficiency and speed by refactoring code that heavily relied on AngularJS’s $compile</span>
+            <span>AngularJSの$compile関数に大きく依存していたコードをリファクタリングすることで、安定性と速度を大きく向上させました</span>
           </li>
           <li className="text-[#fff] flex items-baseline">
             <p className="w-5">-</p>
-            <span>Introduced a new inquiry feature within the solution, including email communication capabilities</span>
+            <span>Eメール受信/発信機能を含むソリューション内の新しい問合せ機能を導入しました</span>
           </li>
         </ul>
       </div>
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
-          Development of Autosave Feature for E-commerce Solution
-          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">June 2019 - July 2019</span>
+          ソリューション商品/注文登録時に一時保存機能を追加
+          <span className="text-sm text-[#c8c1bd] whitespace-nowrap">2019. 06 - 2019. 07</span>
         </h2>
-        <p>Implemented an autosave and data recovery feature to address issues of data loss due to internet disruptions during information entry in the e-commerce solution.</p>
+        <p>商品/注文情報の入力中にネットワークの問題によるデータ損失の問題を解決するために、一時保存およびデータ復旧機能を実装しました。</p>
       </div>
     </Wrapper>
   )

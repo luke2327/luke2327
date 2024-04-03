@@ -1,10 +1,12 @@
 import Wrapper from "@/components/layout/Wrapper"
 import { MdKeyboardArrowRight } from "react-icons/md"
+import Image from 'next/image'
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
+      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
+        <Image src="/favicon_eikoline.png" width={32} height={32} alt="eikoline" className="self-end" />
         Eikoline Inc.
         <span className="text-lg text-[#c8c1bd]">(株式会社エイコーライン)</span>
         <div className="text-sm bg-[#fff] text-[#000] px-1.5 rounded-md">JP</div>
@@ -17,7 +19,7 @@ export default function PortfolioData() {
       <div className="mt-8">
         <h2 className="text-xl text-[#fff] flex gap-2 items-baseline">
           Xenon
-          <span className="text-sm text-[#c8c1bd]">2022. 04 - 2024. 01</span>
+          <span className="text-sm text-[#c8c1bd]">2022. 04 - 2024. 02</span>
         </h2>
         <p>国内電子商取引統合管理ツール</p>
         <ul className="mt-2 flex flex-col gap-0.5">

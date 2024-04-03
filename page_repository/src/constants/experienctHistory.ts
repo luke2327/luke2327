@@ -1,4 +1,4 @@
-import { SupportedLanguage } from "./AppConfig";
+import { SupportedLanguage } from './AppConfig';
 
 export type History = {
   title: {
@@ -18,6 +18,9 @@ export type History = {
   hide?: boolean;
   nav?: Record<SupportedLanguage, string>;
   isJp?: boolean;
+  ico?: string;
+  icoClass?: string;
+  readMoreClass?: string;
 };
 
 export const expHistory = [
@@ -37,15 +40,18 @@ export const expHistory = [
       ko: '2022 - 현재',
       ja: '2022 - 現在',
     },
+    ico: '/favicon_eikoline.png',
     present: true,
     skill: ['TS', 'Next', 'Nuxt', 'Express', 'Sequelize', 'ECS', 'MySQL'],
     link: 'https://eikoline.com',
     nav: {
-      en: '/employment-history/e/eikoline',
-      ko: '/ko/employment-history/e/eikoline',
+      en: '/en/employment-history/e/eikoline',
+      ko: '/employment-history/e/eikoline',
       ja: '/ja/employment-history/e/eikoline',
     },
     isJp: true,
+    readMoreClass:
+      'group-hover:shadow-underline-eikoline-hover shadow-underline-eikoline',
   },
   {
     title: {
@@ -63,14 +69,17 @@ export const expHistory = [
       ko: '2021 - 2022',
       ja: '2021 - 2022',
     },
+    ico: '/favicon_linger.svg',
     skill: ['TS', 'Next', 'Mobx', 'Serverless', 'Cognito', 'MySQL'],
     link: 'https://www.lingerstudio.com',
-    hide: process.env.NODE_ENV === 'development',
+    hide: process.env.NODE_ENV === 'development' && false,
     nav: {
-      en: '/employment-history/e/linger',
-      ko: '/ko/employment-history/e/linger',
+      en: '/en/employment-history/e/linger',
+      ko: '/employment-history/e/linger',
       ja: '/ja/employment-history/e/linger',
     },
+    readMoreClass:
+      'group-hover:shadow-underline-linger-hover shadow-underline-linger',
   },
   {
     title: {
@@ -79,7 +88,7 @@ export const expHistory = [
       ja: '株式会社プレーオート / Development Leader',
     },
     description: {
-      en: "Developed an integrated e-commerce management solution for domestic and Japanese online sellers.",
+      en: 'Developed an integrated e-commerce management solution for domestic and Japanese online sellers.',
       ko: '국내 및 일본 온라인 셀러를 위한 전자상거래 통합관리 솔루션을 개발하였습니다.',
       ja: '国内および日本のオンラインセラーのための電子商取引統合管理ソリューションを開発しました。',
     },
@@ -88,13 +97,16 @@ export const expHistory = [
       ko: '2019 - 2021',
       ja: '2019 - 2021',
     },
+    ico: '/favicon_playauto.ico',
     skill: ['TS', 'Angular', 'Express', 'GraphQL', 'MySQL'],
     link: 'https://www.plto.com',
     nav: {
-      en: '/employment-history/e/playauto',
-      ko: '/ko/employment-history/e/playauto',
+      en: '/en/employment-history/e/playauto',
+      ko: '/employment-history/e/playauto',
       ja: '/ja/employment-history/e/playauto',
     },
+    readMoreClass:
+      'group-hover:shadow-underline-playauto-hover shadow-underline-playauto',
   },
   {
     title: {
@@ -112,7 +124,16 @@ export const expHistory = [
       ko: '2017 - 2019',
       ja: '2017 - 2019',
     },
+    ico: '/favicon_frifee.png',
     skill: ['TS', 'Angular', 'React', 'Gatsby', 'Express', 'MySQL'],
-    hide: process.env.NODE_ENV === 'development',
+    hide: process.env.NODE_ENV === 'development' && false,
+    nav: {
+      en: '/en/employment-history/e/frifee',
+      ko: '/employment-history/e/frifee',
+      ja: '/ja/employment-history/e/frifee',
+    },
+    icoClass: 'invert-[.35]',
+    readMoreClass:
+      'group-hover:shadow-underline-frifee-hover shadow-underline-frifee',
   },
 ] as History[];

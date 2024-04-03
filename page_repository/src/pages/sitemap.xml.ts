@@ -15,6 +15,12 @@ function generateSiteMap() {
      <url>
        <loc>https://resume.maplew.com/employment-history/e/linger</loc>
      </url>
+     <url>
+       <loc>https://resume.maplew.com/employment-history/e/playauto</loc>
+     </url>
+     <url>
+       <loc>https://resume.maplew.com/employment-history/e/frifee</loc>
+     </url>
    </urlset>
  `;
 }

@@ -1,10 +1,12 @@
 import Wrapper from "@/components/layout/Wrapper"
 import { MdKeyboardArrowRight } from "react-icons/md"
+import Image from 'next/image'
 
 export default function PortfolioData() {
   return (
     <Wrapper>
-      <h1 className="pt-4 text-2xl text-[#fff] flex gap-2 items-baseline">
+      <h1 className="pt-6 text-2xl text-[#fff] flex gap-2 items-baseline">
+        <Image src="/favicon_linger.svg" width={32} height={32} alt="linger" className="self-end" />
         Linger Corp.
       </h1>
       <div className="mt-1">

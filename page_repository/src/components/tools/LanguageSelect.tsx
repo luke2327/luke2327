@@ -44,9 +44,33 @@ export default function LanguageSelect() {
             }}
             onClick={() => setIsPopoverOpen(!isPopoverOpen)}
           >
-            <Link href={'/' + currentPath} className={clsx("hover:text-[#fff]", currentLanguage === 'en' ? 'text-[#fff]' : '')}>English</Link>
-            <Link href={'/ja/' + currentPath} className={clsx("hover:text-[#fff]", currentLanguage === 'ja' ? 'text-[#fff]' : '')}>日本語</Link>
-            <Link href={'/ko/' + currentPath} className={clsx("hover:text-[#fff]", currentLanguage === 'ko' ? 'text-[#fff]' : '')}>한국어</Link>
+            <Link
+              href={'/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'ko' ? 'text-[#fff]' : ''
+              )}
+            >
+              한국어
+            </Link>
+            <Link
+              href={'/ja/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'ja' ? 'text-[#fff]' : ''
+              )}
+            >
+              日本語
+            </Link>
+            <Link
+              href={'/en/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'en' ? 'text-[#fff]' : ''
+              )}
+            >
+              English
+            </Link>
           </div>
         </ArrowContainer>
       )}
