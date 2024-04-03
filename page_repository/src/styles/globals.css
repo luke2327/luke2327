@@ -159,7 +159,7 @@ img {
     --luke2327-colors-black-200: #262626;
     --luke2327-colors-black-300: #1a1a1a;
     --luke2327-colors-black-400: #0d0d0d;
-    --luke2327-colors-black-500: #000;
+    --luke2327-colors-black-500: linear-gradient(234deg,rgb(38 38 43 / 71%),rgba(255,0,0,0) 70.71%),linear-gradient(169deg,rgb(39 33 33 / 80%),rgb(146 154 146 / 0%) 70.71%),linear-gradient(336deg,rgb(20 26 35 / 80%),rgba(0,0,255,0) 70.71%);
     --luke2327-colors-black-600: #000;
     --luke2327-colors-black-700: #000;
     --luke2327-colors-black-800: #000;

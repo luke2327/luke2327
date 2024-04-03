@@ -1,3 +1,7 @@
+import useCurrentLanguage from '@/lib/useCurrentLanguage';
+import useCurrentPath from '@/lib/useCurrentPath';
+import clsx from 'clsx';
+import Link from 'next/link';
 import { Languages } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { ArrowContainer, Popover } from 'react-tiny-popover';
@@ -5,6 +9,8 @@ import { ArrowContainer, Popover } from 'react-tiny-popover';
 export default function LanguageSelect() {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   const clickMeButtonRef = useRef<HTMLButtonElement>(null);
+  const currentLanguage = useCurrentLanguage();
+  const currentPath = useCurrentPath();
 
   return (
     <Popover
@@ -24,7 +30,6 @@ export default function LanguageSelect() {
           className="popover-arrow-container"
           arrowClassName="popover-arrow"
           style={{
-            border: '1px solid var(--luke2327-colors-whiteAlpha-700)',
             borderRadius: 4,
           }}
         >
@@ -39,9 +44,33 @@ export default function LanguageSelect() {
             }}
             onClick={() => setIsPopoverOpen(!isPopoverOpen)}
           >
-            <p>English</p>
-            <p>日本語</p>
-            <p>한국어</p>
+            <Link
+              href={'/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'ko' ? 'text-[#fff]' : ''
+              )}
+            >
+              한국어
+            </Link>
+            <Link
+              href={'/ja/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'ja' ? 'text-[#fff]' : ''
+              )}
+            >
+              日本語
+            </Link>
+            <Link
+              href={'/en/' + currentPath}
+              className={clsx(
+                'hover:text-[#fff]',
+                currentLanguage === 'en' ? 'text-[#fff]' : ''
+              )}
+            >
+              English
+            </Link>
           </div>
         </ArrowContainer>
       )}

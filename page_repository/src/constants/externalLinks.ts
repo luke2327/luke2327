@@ -4,7 +4,7 @@ export const extUrls = {
     'https://etherscan.io/address/0xd7346076Fc649A3E52E379F31d9c9Fb35f08d5Cb',
   foundation: 'https://foundation.app/@Luke2327',
   fmawo: 'https://fmawo.com',
-  aimyon: 'https://aimyon.co.kr',
+  aimyon: 'https://ai-myon.com',
 };
 
 export const extLinks = [
@@ -13,6 +13,7 @@ export const extLinks = [
     url: extUrls.github,
     // title: '@luke2327',
     title: extUrls.github,
+    hide: process.env.NODE_ENV === 'development' && false
   },
   // {
   //   head: 'Etherscan',
@@ -30,6 +31,7 @@ export const extLinks = [
     url: extUrls.aimyon,
     // title: 'AIMYON',
     title: extUrls.aimyon,
+    hide: process.env.NODE_ENV === 'development' && false
   },
   // {
   //   head: 'Foundation',

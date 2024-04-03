@@ -8,15 +8,18 @@ import {
   HsSkillStack,
 } from '@/components/history/Historys';
 import type { History } from '@/constants/experienctHistory';
+import useCurrentLanguage from '@/lib/useCurrentLanguage';
 
 export default function SideProjectHistory(props: History) {
+  const currentLanguage = useCurrentLanguage();
+
   return (
     <HsGrid role={'row'}>
       <HsPeriod
         aria-label={`period: ${props.period}`}
         className={'history-period'}
       >
-        {props.period}
+        {props.period[currentLanguage]}
       </HsPeriod>
       <HsCard>
         <HsAnchor

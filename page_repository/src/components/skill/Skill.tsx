@@ -4,7 +4,7 @@ import SkillList from '@/components/skill/SkillList';
 
 export default function Skill() {
   return (
-    <SkillListWrapper role={'skill'}>
+    <SkillListWrapper id="skill" role={'skill'}>
       <SkillListHeading role={'heading'} className={'skill-heading text-xl xs:text-lg'}>
         Skill
       </SkillListHeading>
