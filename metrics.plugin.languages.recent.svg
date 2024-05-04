@@ -16,14 +16,14 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 312kb of code in 311 edited files across 106 commits over last 14 days</small>
+                <small>estimation from 749kb of code in 854 edited files across 172 commits over last 13 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="376.0506483743657" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="376.0506483743657" y="0" width="83.94935162563428" height="8" fill="#41b883"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="232.17972872210234" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="232.17972872210234" y="0" width="227.82027127789763" height="8" fill="#c6538c"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -35,8 +35,8 @@
                                 TypeScript
                             </div>
                             <small>
-                                <div>174 kB</div>
-                                <div>81.75%</div>
+                                <div>266 kB</div>
+                                <div>50.47%</div>
                             </small>
                         </div>
                     </section>
@@ -44,13 +44,13 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#41b883" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#c6538c" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Vue
+                                SCSS
                             </div>
                             <small>
-                                <div>38.8 kB</div>
-                                <div>18.25%</div>
+                                <div>261 kB</div>
+                                <div>49.53%</div>
                             </small>
                         </div>
                     </section>
