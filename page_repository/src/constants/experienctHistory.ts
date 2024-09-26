@@ -37,9 +37,9 @@ export const expHistory = [
       ja: 'インターネットカフェ管理プログラム及びユーザーアプリの開発を担当しています。',
     },
     period: {
-      en: '2022 - present',
-      ko: '2022 - 현재',
-      ja: '2022 - 現在',
+      en: '2024 - present',
+      ko: '2024 - 현재',
+      ja: '2024 - 現在',
     },
     ico: '/favicon_bigpicture.webp',
     skill: ['TS', 'Electron', 'Native App', 'Vite', 'Pinia', 'SpringBoot'],
