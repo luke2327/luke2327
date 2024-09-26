@@ -5,6 +5,7 @@ export const extUrls = {
   foundation: 'https://foundation.app/@Luke2327',
   fmawo: 'https://fmawo.com',
   aimyon: 'https://ai-myon.com',
+  tuki: 'https://www.tuki.jp',
 };
 
 export const extLinks = [
@@ -31,6 +32,12 @@ export const extLinks = [
     url: extUrls.aimyon,
     // title: 'AIMYON',
     title: extUrls.aimyon,
+    hide: process.env.NODE_ENV === 'development' && false
+  },
+  {
+    head: 'tuki.',
+    url: extUrls.tuki,
+    title: extUrls.tuki,
     hide: process.env.NODE_ENV === 'development' && false
   },
   // {

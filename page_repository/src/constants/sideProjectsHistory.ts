@@ -3,6 +3,30 @@ import type { History } from '@/constants/experienctHistory';
 export const spHistory = [
   {
     title: {
+      en: 'tuki.',
+      ko: '츠키.',
+      ja: 'tuki.',
+    },
+    description: {
+      en: `A special space for her mysterious self that appeared like a comet`,
+      ko: '혜성처럼 나타난 신비로운 그녀만을 위한 특별한 공간',
+      ja: '彗星のように現れた神秘的な彼女だけのための特別な空間',
+    },
+    link: 'https://www.tuki.jp',
+    period: {
+      en: '2023 - present',
+      ko: '2023 - 진행중',
+      ja: '2023 - 現在',
+    },
+    skill: [
+      'TS',
+      'Next 14',
+      'Tailwind',
+    ],
+    present: true,
+  },
+  {
+    title: {
       en: 'AIMYON',
       ko: 'AIMYON',
       ja: 'AIMYON',
@@ -14,9 +38,9 @@ export const spHistory = [
     },
     link: 'https://ai-myon.com',
     period: {
-      en: '2023 - present',
-      ko: '2023 - 진행중',
-      ja: '2023 - 現在',
+      en: '2023 - 2024',
+      ko: '2023 - 2024',
+      ja: '2023 - 2024',
     },
     skill: [
       'TS',
@@ -28,8 +52,6 @@ export const spHistory = [
       'SSG',
       'ISR',
     ],
-    present: true,
-    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {
@@ -44,12 +66,11 @@ export const spHistory = [
     },
     link: 'https://fmawo.com',
     period: {
-      en: '2022 - present',
-      ko: '2022 - 진행중',
-      ja: '2022 - 現在',
+      en: '2022 - 2024',
+      ko: '2022 - 2024',
+      ja: '2022 - 2024',
     },
     skill: ['TS', 'Next 14', 'Tailwind', 'Nest', 'RDS', 'SSG', 'ISR'],
-    present: true,
   },
   {
     title: {
@@ -69,6 +90,7 @@ export const spHistory = [
       ja: '2022 - 2023',
     },
     skill: ['TS', 'Next', 'Tailwind', 'Express', 'Sequelize', 'RDS', 'ECS'],
+    hide: true,
   },
   {
     title: {
@@ -88,7 +110,6 @@ export const spHistory = [
       ja: '2021 - 2021',
     },
     skill: ['HTML', 'CSS'],
-    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {
@@ -146,7 +167,6 @@ export const spHistory = [
     },
     link: 'https://lms-manage-frontend.vercel.app',
     skill: ['TS', 'React', 'MaterialUI', 'Express'],
-    hide: process.env.NODE_ENV === 'development',
   },
   {
     title: {

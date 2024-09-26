@@ -21,9 +21,38 @@ export type History = {
   ico?: string;
   icoClass?: string;
   readMoreClass?: string;
+  noDetail?: boolean;
 };
 
 export const expHistory = [
+  {
+    title: {
+      en: 'Development Manager – Bigpicture Interactive Inc.',
+      ko: '빅픽처인터렉티브 / Development Manager',
+      ja: 'Bigpicture Interactive / Development Manager',
+    },
+    description: {
+      en: `Developing PC room management programs and user apps.`,
+      ko: 'PC방 관리 프로그램 및 유저앱의 개발을 담당하고 있습니다.',
+      ja: 'インターネットカフェ管理プログラム及びユーザーアプリの開発を担当しています。',
+    },
+    period: {
+      en: '2022 - present',
+      ko: '2022 - 현재',
+      ja: '2022 - 現在',
+    },
+    ico: '/favicon_bigpicture.webp',
+    skill: ['TS', 'Electron', 'Native App', 'Vite', 'Pinia', 'SpringBoot'],
+    link: 'https://www.bigpi.co',
+    nav: {
+      en: '/en/employment-history/e/bigpicture',
+      ko: '/employment-history/e/bigpicture',
+      ja: '/ja/employment-history/e/bigpicture',
+    },
+    noDetail: true,
+    readMoreClass:
+      'group-hover:shadow-underline-bigpicture-hover shadow-underline-bigpicture',
+  },
   {
     title: {
       en: 'Development Leader – Eikoline Inc.',
@@ -36,12 +65,11 @@ export const expHistory = [
       ja: '国内及び海外商品に対して販売、在庫、精算、注文などを処理する統合管理ソリューションを開発しました。',
     },
     period: {
-      en: '2022 - present',
-      ko: '2022 - 현재',
-      ja: '2022 - 現在',
+      en: '2022 - 2024',
+      ko: '2022 - 2024',
+      ja: '2022 - 2024',
     },
     ico: '/favicon_eikoline.png',
-    present: true,
     skill: ['TS', 'Next', 'Nuxt', 'Express', 'Sequelize', 'ECS', 'MySQL'],
     link: 'https://eikoline.com',
     nav: {
@@ -124,7 +152,7 @@ export const expHistory = [
       ko: '2017 - 2019',
       ja: '2017 - 2019',
     },
-    ico: '/favicon_frifee.png',
+    ico: '',
     skill: ['TS', 'Angular', 'React', 'Gatsby', 'Express', 'MySQL'],
     hide: process.env.NODE_ENV === 'development' && false,
     nav: {

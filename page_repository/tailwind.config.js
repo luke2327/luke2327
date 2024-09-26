@@ -60,6 +60,8 @@ module.exports = {
           'underline-purple': 'inset 0 -3px 0 -1px #7e5befb5',
           'underline-eikoline': 'inset 0 -3px 0 -1px #ffffffb5',
           'underline-eikoline-hover': 'inset 0 -10px 0 -1px #ffffffb5',
+          'underline-bigpicture': 'inset 0 -3px 0 -1px #ffffffb5',
+          'underline-bigpicture-hover': 'inset 0 -10px 0 -1px #ffffffb5',
           'underline-linger': 'inset 0 -3px 0 -1px #F19A37b5',
           'underline-linger-hover': 'inset 0 -10px 0 -1px #F19A37b5',
           'underline-playauto': 'inset 0 -3px 0 -1px #2D69C0b5',

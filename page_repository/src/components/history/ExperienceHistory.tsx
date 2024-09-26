@@ -67,7 +67,7 @@ export default function ExperienceHistory(props: History) {
           <HsDescription className="hover:text-[#fff]" aria-label={`description: ${props.description[currentLanguage]}`}>
             <div className="flex flex-col gap-4 group items-end">
               <p className="self-start">{props.description[currentLanguage]}</p>
-              {props.nav && <span className={clsx("text-right w-[84px]", props.readMoreClass)}>Read more...</span>}
+              {props.nav && !props.noDetail && <span className={clsx("text-right w-[84px]", props.readMoreClass)}>Read more...</span>}
             </div>
           </HsDescription>
           <HsSkillStack
