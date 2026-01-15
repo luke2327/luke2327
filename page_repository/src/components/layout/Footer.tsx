@@ -1,8 +1,10 @@
+import dayjs from 'dayjs';
+
 export default function Footer() {
   return (
-    <footer className="flex justify-center pb-8 text-xs xs:text-sm px-2">
+    <footer className="flex justify-center px-2 pb-8 text-xs xs:text-sm">
       <p>
-        Copyright(C) 2023 - 2024 maplew.com All Rights Reserved.
+        Copyright(C) 2023 - {dayjs().year()} maplew.com All Rights Reserved.
       </p>
     </footer>
   );

@@ -15,7 +15,7 @@ const location = [
     asPath: '',
   },
   {
-    label: 'Employment History',
+    label: '/ Employment History',
     path: {
       en: '/en/employment-history',
       ko: '/employment-history',
@@ -63,15 +63,15 @@ const location = [
     asPath: 'frifee',
     default: 'hidden',
   },
-  {
-    label: 'Side projects',
-    path: {
-      en: '/en/side-projects',
-      ko: '/side-projects',
-      ja: '/ja/side-projects',
-    },
-    asPath: 'employment-history',
-  },
+  // {
+  //   label: 'Side projects',
+  //   path: {
+  //     en: '/en/side-projects',
+  //     ko: '/side-projects',
+  //     ja: '/ja/side-projects',
+  //   },
+  //   asPath: 'employment-history',
+  // },
 ];
 
 const RootDomain = ['/', '/en', '/ja'];

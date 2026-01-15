@@ -19,10 +19,10 @@ export default function Experience(props: INodeProps) {
         key={idx}
         aria-rowindex={idx}
         aria-rowspan={props.history.length}
-        {...history} 
+        {...history}
       />
     ));
-  }
+  };
 
   return (
     <HistoryWrapper id={props.id} role={'row-group'} aria-label={'Experience'}>
@@ -37,13 +37,11 @@ export default function Experience(props: INodeProps) {
       >
         {props.head}
       </HsHeading>
-      {
-        props.isAnimate ? (
-          <AnimateItems
-            items={getHistorys()}
-          />
-        ) : <>{getHistorys()}</>
-      }
+      {props.isAnimate ? (
+        <AnimateItems items={getHistorys()} />
+      ) : (
+        <>{getHistorys()}</>
+      )}
     </HistoryWrapper>
   );
 }

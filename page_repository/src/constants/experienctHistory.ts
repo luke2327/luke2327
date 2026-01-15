@@ -1,6 +1,7 @@
 import { SupportedLanguage } from './AppConfig';
 
 export type History = {
+  usable: boolean;
   title: {
     en: string;
     ko: string;
@@ -26,15 +27,16 @@ export type History = {
 
 export const expHistory = [
   {
+    usable: true,
     title: {
-      en: 'Development Manager – Bigpicture Interactive Inc.',
-      ko: '빅픽처인터렉티브 / Development Manager',
-      ja: 'Bigpicture Interactive / Development Manager',
+      en: 'Front-end - Bigpicture Interactive Inc.',
+      ko: '주식회사 빅픽처인터렉티브 / Front-end',
+      ja: '株式会社 Bigpicture Interactive / Front-end',
     },
     description: {
       en: `Developing PC room management programs and user apps.`,
       ko: 'PC방 관리 프로그램 및 유저앱의 개발을 담당하고 있습니다.',
-      ja: 'インターネットカフェ管理プログラム及びユーザーアプリの開発を担当しています。',
+      ja: 'ネットカフェ管理プログラム及びユーザーアプリの開発を担当しています。',
     },
     period: {
       en: '2024 - present',
@@ -42,27 +44,27 @@ export const expHistory = [
       ja: '2024 - 現在',
     },
     ico: '/favicon_bigpicture.webp',
-    skill: ['TS', 'Electron', 'Native App', 'Vite', 'Pinia', 'SpringBoot'],
+    skill: ['TS', 'Electron', 'rxJS', 'TSyringe', 'TanStack Query'],
     link: 'https://www.bigpi.co',
     nav: {
       en: '/en/employment-history/e/bigpicture',
       ko: '/employment-history/e/bigpicture',
       ja: '/ja/employment-history/e/bigpicture',
     },
-    noDetail: true,
     readMoreClass:
       'group-hover:shadow-underline-bigpicture-hover shadow-underline-bigpicture',
   },
   {
+    usable: true,
     title: {
-      en: 'Development Leader – Eikoline Inc.',
-      ko: '주식회사 에이코라인 / Development Leader',
-      ja: '株式会社エイコーライン / Development Leader',
+      en: 'Tech Leader - Eikoline Inc.',
+      ko: '주식회사 에이코라인 / Tech Leader',
+      ja: '株式会社 エイコーライン / Tech Leader',
     },
     description: {
       en: `Application that handles other parts such as product data, settlement, statistics, inventory, and orders sent to the Sellingtool.`,
       ko: '국내 및 해외 상품에 대해 판매, 재고, 정산, 주문 등을 처리하는 통합관리 솔루션을 개발하였습니다.',
-      ja: '国内及び海外商品に対して販売、在庫、精算、注文などを処理する統合管理ソリューションを開発しました。',
+      ja: '国内及び海外商品に対して販売、在庫、精算、注文などを処理する統合管理ソリューションを開発を担当していました。',
     },
     period: {
       en: '2022 - 2024',
@@ -70,7 +72,7 @@ export const expHistory = [
       ja: '2022 - 2024',
     },
     ico: '/favicon_eikoline.png',
-    skill: ['TS', 'Next', 'Nuxt', 'Express', 'Sequelize', 'ECS', 'MySQL'],
+    skill: ['TS', 'Nuxt', 'Pinia', 'Sequelize', 'Docker', 'ECS', 'SQS'],
     link: 'https://eikoline.com',
     nav: {
       en: '/en/employment-history/e/eikoline',
@@ -82,10 +84,11 @@ export const expHistory = [
       'group-hover:shadow-underline-eikoline-hover shadow-underline-eikoline',
   },
   {
+    usable: false,
     title: {
-      en: 'Development Manager – Linger Corp.',
-      ko: '주식회사 링거 / Development Manager',
-      ja: '株式会社リンガー / Development Manager',
+      en: 'Front-end - Linger Corp.',
+      ko: '주식회사 링거 / Front-end',
+      ja: '株式会社リンガー / Front-end',
     },
     description: {
       en: 'While managing the music data, I experienced blockchain-related technology and Rust language such as Ativ and Solana.',
@@ -110,10 +113,11 @@ export const expHistory = [
       'group-hover:shadow-underline-linger-hover shadow-underline-linger',
   },
   {
+    usable: false,
     title: {
-      en: 'Development Leader – Playauto Inc.',
-      ko: '주식회사 플레이오토 / Development Leader',
-      ja: '株式会社プレーオート / Development Leader',
+      en: 'Tech Leader - Playauto Inc.',
+      ko: '주식회사 플레이오토 / Tech Leader',
+      ja: '株式会社プレーオート / Tech Leader',
     },
     description: {
       en: 'Developed an integrated e-commerce management solution for domestic and Japanese online sellers.',
@@ -137,10 +141,11 @@ export const expHistory = [
       'group-hover:shadow-underline-playauto-hover shadow-underline-playauto',
   },
   {
+    usable: true,
     title: {
-      en: 'Development Manager – Frifee Inc.',
-      ko: '주식회사 프라이피 / Development Manager',
-      ja: '株式会社フライフィー / Development Manager',
+      en: 'Full-stack - Frifee Inc.',
+      ko: '주식회사 프라이피 / Full-stack',
+      ja: '株式会社 フライフィー / Full-stack',
     },
     description: {
       en: 'Overseas soccer, baseball, basketball score matching, live linking, line-up, news, and VOD service in 6 languages respectively.',
@@ -153,7 +158,7 @@ export const expHistory = [
       ja: '2017 - 2019',
     },
     ico: '',
-    skill: ['TS', 'Angular', 'React', 'Gatsby', 'Express', 'MySQL'],
+    skill: ['TS', 'React', 'Gatsby', 'MobX', 'Scrapy', 'Flask'],
     hide: process.env.NODE_ENV === 'development' && false,
     nav: {
       en: '/en/employment-history/e/frifee',
@@ -164,4 +169,4 @@ export const expHistory = [
     readMoreClass:
       'group-hover:shadow-underline-frifee-hover shadow-underline-frifee',
   },
-] as History[];
+].filter(($) => $.usable) as History[];
