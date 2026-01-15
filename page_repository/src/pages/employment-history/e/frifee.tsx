@@ -41,9 +41,9 @@ export default function PortfolioData() {
           </li>
         </ul>
         <div className="mt-2">
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2">
             <p className="text-[#fff]">활용기술</p>
-            <ul className="flex gap-2">
+            <ul className="flex flex-wrap gap-2">
               <li>React</li>
               <li>Gatsby</li>
               <li>MobX</li>
@@ -92,9 +92,9 @@ export default function PortfolioData() {
           </li>
         </ul>
         <div className="mt-2">
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2">
             <p className="text-[#fff]">활용기술</p>
-            <ul className="flex gap-2">
+            <ul className="flex flex-wrap gap-2">
               <li>React</li>
               <li>MobX</li>
               <li>ChartJS</li>

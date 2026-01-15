@@ -62,7 +62,7 @@ export default function LanguageSelect() {
             >
               日本語
             </Link>
-            <Link
+            {/* <Link
               href={'/en/' + currentPath}
               className={clsx(
                 'hover:text-[#fff]',
@@ -70,7 +70,7 @@ export default function LanguageSelect() {
               )}
             >
               English
-            </Link>
+            </Link> */}
           </div>
         </ArrowContainer>
       )}

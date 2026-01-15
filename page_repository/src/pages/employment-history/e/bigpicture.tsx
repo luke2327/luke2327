@@ -58,7 +58,7 @@ export default function PortfolioData() {
         <div className="mt-2">
           <div className="flex flex-col gap-2">
             <p className="text-[#fff]">활용기술</p>
-            <ul className="flex gap-2">
+            <ul className="flex flex-wrap gap-2">
               <li>Vue3</li>
               <li>rxJS</li>
               <li>Jest</li>
