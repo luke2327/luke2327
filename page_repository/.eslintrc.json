@@ -21,11 +21,9 @@
       "plugins": [
         "@typescript-eslint",
         "unused-imports",
-        "tailwindcss",
         "simple-import-sort"
       ],
       "extends": [
-        "plugin:tailwindcss/recommended",
         "airbnb-typescript",
         "next/core-web-vitals",
         "plugin:prettier/recommended"
@@ -57,7 +55,6 @@
         "@typescript-eslint/no-use-before-define": "off",
         "unused-imports/no-unused-vars": "warn",
         "@typescript-eslint/no-shadow": "off",
-        "tailwindcss/migration-from-tailwind-2": "off",
         "no-nested-ternary": "off",
         "import/no-extraneous-dependencies": [
           "off",
